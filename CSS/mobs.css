@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+        "t t t t t t t t"
+        "m m m m m m m m"
+        "a a a a a a a a"
+        "a a a a a a a a"
+        "b b b b b b b b"
+        "b b b b b b b b"
+        "b b b b b b b b";
+    background-color:grey;
+}
+
+.content_a {
+    grid-area: a;
+    width: 100vw;
+    height: 40vh;
+}
+
+.content_b {
+    grid-area: b;
+    height: 40vh;
+}
+
+.content_m {
+    grid-area: m;
+    
+    top: 6vh;
+}
+
+#header {
+    background-color: #333;
+    color: aliceblue;
+    width: 100vw;
+    grid-area: t;
+}
+
+ul.menu {
+    display: flex;
+    flex-wrap:nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    width: 100vw;
+    
+}
+
+li.menu a {
+    display: block;
+    color:aliceblue;
+    text-align: center;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+li.menu a:hover {
+    background-color: forestgreen;
+}
