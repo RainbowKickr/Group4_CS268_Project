@@ -30,6 +30,8 @@ h2 {
 .content_b {
     grid-area: b;
     height: 40vh;
+    width: 100vw;
+    background-color: aquamarine;
 }
 
 .content_m {
