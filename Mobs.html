@@ -1,52 +1,101 @@
 <html>
-    <head>
-        <title>Mobs</title>
-        <link rel="icon" type="image/ico" href="Images/Minecraft_favicon.ico">
-        <link rel="stylesheet" href="CSS/mobs.css">
-    </head>
-    <body>
-        <div id="container">
-            <div id="header">
 
-                <h1>Movies for today!</h1>
-            </div>
-                <div class="content_m">
-                    <ul class="menu">
-                        <li class="menu"><a href="biomes.html">Biomes</a></li>
-                        <li class="menu"><a href="structures.html">Structures</a></li>
-                        <li class="menu"><a href="CraftingRecipes.html">Crafting Reciepes</a></li>
-                        <li class="menu"><a href="BeginnersBasics.html">Beginner's Basics</a></li>
-                        <li class="menu"><a href="#moreMovies">Caving Tips</a></li>
-                        <li class="menu"><a href="#moreMovies">Useful Farms</a></li>
-                        <li class="menu"><a href="#moreMovies">Beating the Game</a></li>
-                    </ul>
-                </div>
-                <div id="content_a">
-                    <p>
-                        Mobs spawn everywhere and in every dimension. There are three type of mobs: passive, neutral and hostile.
-                        <li><b>Passive mobs</b> will not attack you back under any circemstance</li>
-                        <li><b>Neutral mobs</b> will spawn as passive, but under certain conditions they will attack you</li>
-                        <li><b>Hostile mobs</b> will always try to attack when you are in range for them to see you</li>
-                    </p>
-                    <p>
-                        <table border="forestgreen">
-                            <tr>
-                                <td>picture of enderman & enderman label?</td>
-                                <td>strengths & weaknesses</td>
-                                <td>Other info</td>
-                            </tr>
+<head>
+    <title>Mobs</title>
+    <link rel="icon" type="image/ico" href="Images/Minecraft_favicon.ico">
+    <link rel="stylesheet" href="CSS/mobs.css">
+    <link rel="stylesheet" href="CSS/formatSkeleton.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
 
-                        </table>
-                    </p>
-                    <button type="button" onclick="overworldFunction()">Overworld</button>
-                    <button type="button" onclick="netherFunction()">Nether</button>
-                    <button type="button" onclick="endFunction()">End</button>
-                    <script src="JavaScript/mobs.js"></script>
-                </div>
-                <div id="content_b">
-                    test test
-                </div>
-            </div>
-        
-    </body>
+<body>
+    <div class="scroll-background" id="scrollBackground"></div>
+
+    <div class="container">
+        <div class="content_a">
+            <img src="/images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#">Gameplay</a>
+                    <div class="dropdown-content">
+                        <a href="#moments">Basics</a>
+                        <a href="CraftingRecipes.html">Crafting Recipes</a>
+                        <a href="/Project-Skeleton-/UsefulFarms.html">Farms</a>
+                        <a href="/Project-Skeleton-/BeatingTheGame.html">Beating the game</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Exploration</a>
+                    <div class="dropdown-content">
+                        <a href="/Project-Skeleton-/Caves.html">Caving</a>
+                        <a href="structures.html">Structures</a>
+                        <a href="biomes.html">Biomes</a>
+                    </div>
+                </li>
+                <li><a href="Mobs.html">Mobs</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+        <div class="content_b"></div>
+        <div class="content_c"></div>
+        <div class="content_d"></div>
+        <div class="content_e">
+            <p>
+                Mobs spawn everywhere and in every dimension. There are three type of mobs: passive, neutral and
+                hostile.
+                <br><br><b>Passive mobs</b> will not attack you back under any circemstance
+                <br><b>Neutral mobs</b> will spawn as passive, but under certain conditions they will attack you
+                <br><b>Hostile mobs</b> will always try to attack when you are in range for them to see you
+            </p>
+            <p>
+            <table border align="center">
+                <tr>
+                    <td>Overworld Mob Picture</td>
+                    <td>Health</td>
+                    <td>Aggression Status</td>
+                    <td>Natural Spawn</td>
+                    <td>Other Info</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/Images/enderman.png">
+                        <p>Enderman</p>
+                    </td>
+                    <td>20 hearts</td>
+                    <td>
+                        Neutral
+                        <p>Passive when player wears carved pumpkin</p>
+                    </td>
+                    <td>Everywhere and in all dimensions barring the Deep Dark in the Overworld and anywhere in the Nether with light level above 7 excluding Nether Wastes, Soul Sand Valley and Warped Forest</td>
+                    <td>
+                        Takes damage when touching water, including when it rains. Will become hostile if shot at by a player
+                        <p>Can drop enderpearls when killed</p>
+                    </td>
+                </tr>
+            </table>
+            </p>
+            <button type="button" onclick="overworldFunction()">Overworld</button>
+            <button type="button" onclick="netherFunction()">Nether</button>
+            <button type="button" onclick="endFunction()">End</button>
+        </div>
+        <div class="content_f">
+            <br><br><br><br><br><br><br><br><br><table id="table" border align="center"></table>
+        </div>
+    </div>
+    <script src="JavaScript/mobs.js">
+        overworldFunction(); /*sets default to overworld*/
+    </script>
+    <script>
+        const background = document.getElementById("scrollBackground");
+
+        window.addEventListener("scroll", () => {
+            let scrollY = window.scrollY;
+            let newHeight = Math.max(0, 200 - scrollY);
+            background.style.height = `${newHeight}px`;
+        });
+
+    </script>
+</body>
+
 </html>

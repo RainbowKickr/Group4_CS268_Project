@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+}
+
+.scroll-background {
+    width: 100%;
+    height: 350px;
+    background-image: url("/images/MC_sky.png");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    transition: height 0.5s;
+}
+
+.container {
+    display: grid;
+    background-color: #E6ECF0;
+    width: 100vw;
+    height: auto;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b e e e e e e e e c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "b g g g g g g g g c"
+        "b h h h h h h h h c"
+        "b i i i i i i i i c"
+        "d d d d d d d d d d";
+}
+
+.content_a { grid-area: a; }
+.content_b { grid-area: b; }
+.content_c { grid-area: c; }
+.content_d { grid-area: d; }
+.content_e { grid-area: e; }
+.content_f { grid-area: f; }
+.content_g { grid-area: g; }
+.content_h { grid-area: h; }
+.content_i { grid-area: i; }
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    background-image: url("/images/stone.jpg");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    padding: 17px;
+    font-size: 20px;
+    display: block;
+    background-color: #a8a6a6;
+    color: rgb(242, 195, 38);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+    min-width: 180px;
+}
+
+ul.menu li a:hover {
+    background-image: 
+        linear-gradient(rgba(196, 151, 0, 0.6), rgba(173, 148, 5, 0.2)), 
+        url("/images/gold.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    transition: background-image 0.5s;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+    background-color: #808080;
+}
+
+.menu li:hover .dropdown-content {
+    display: block;
+    transition: background-color 0.5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.5s;
+}
+
+.content_a {
+    background-image: url("/images/grass.jpg");
+    background-size: cover;      
+    background-position: top;  
+    background-repeat: no-repeat; 
+    text-decoration: none;
+    position: relative;
+    background-color: rgb(105, 68, 19);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    min-height: 100px;
+}
+.content_b, .content_c, .content_d {
+    background-image: url("/images/dirt.png");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-color: rgb(105, 68, 19);
+    text-align: center;
+    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    min-height: 50px;
+}
+
+.content_e, .content_f, .content_g, .content_h, .content_i {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 50vh;
+}
