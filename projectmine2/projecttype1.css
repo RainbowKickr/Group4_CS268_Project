@@ -1,0 +1,104 @@
+body
+{
+    margin: 0;
+    display: grid;
+    min-width: max-content;
+    flex-shrink: 0;
+    background-image: url('minecraft.png')
+   
+}
+
+#container
+{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 100px;
+    
+}
+#login
+{
+    grid-row: 1 / 1;
+    grid-column: 1 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+button
+{
+    background: rgb(88, 54, 3);
+    border-radius: 5px;
+    color: white;
+}
+button:hover
+{
+    
+    text-decoration: underline;
+}
+#header
+{
+    grid-row: 2 / 3;
+    grid-column: 1 / 7;
+    background: rgb(4, 136, 22);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden; 
+    border-style: solid;
+    border-radius: 10px;
+
+}
+#navigation
+{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: rgb(88, 54, 3, 0.60);
+    display: flex;
+    ;
+    overflow: hidden; 
+    border-style: solid;
+    border-radius: 10px;
+
+}
+#content
+{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    background: rgb(88, 54, 3, 0.60);
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+h1
+{
+    margin:20px;
+    white-space: nowrap;
+    text-align: center;
+}
+h2
+{
+    margin:20px;
+    white-space: nowrap;
+    text-align: center;
+    flex-direction: column;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.center
+{
+   
+}
+a:hover
+{
+    color: white;
+}
