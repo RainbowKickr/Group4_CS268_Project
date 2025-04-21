@@ -1,19 +1,208 @@
 body{
     margin:0;
-    padding:0;
 }
-.container{
-    background-color: #333333;
-    width:100vw;
-    height:100vh;
-    color: #FFFFFF;
+
+/* Sections */
+table{
+    background-color: #eaecf0;
 }
-.header{
-    background-color: #333333;
+
+.category {
+    background-color: #c6c6c6;
 }
-.recipes{
-    background-color: #555555;
+
+/*Skeleton*/
+.scroll-background {
+    width: 100%;
+    height: 350px;
+    background-image: url("MC_sky.png");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    transition: height 0.5s;
 }
-.footer{
-    background-color: #555555;
+
+.container {
+    display: grid;
+    background-color: #E6ECF0;
+    width: 100vw;
+    height: auto;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b e e e e e e e e c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "b g g g g g g g g c"
+        "b h h h h h h h h c"
+        "b i i i i i i i i c"
+        "d d d d d d d d d d";
 }
+
+.content_a { grid-area: a; }
+.content_b { grid-area: b; }
+.content_c { grid-area: c; }
+.content_d { grid-area: d; }
+.content_e { grid-area: e; }
+.content_f { grid-area: f; }
+.content_g { grid-area: g; }
+.content_h { grid-area: h; }
+.content_i { grid-area: i; }
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    background-image: url("stone.jpg");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    padding: 17px;
+    font-size: 20px;
+    display: block;
+    background-color: #a8a6a6;
+    color: rgb(242, 195, 38);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    z-index: 1;
+    min-width: 180px;
+}
+
+ul.menu li a:hover {
+    background-image: 
+        linear-gradient(rgba(196, 151, 0, 0.6), rgba(173, 148, 5, 0.2)), 
+        url("gold.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    transition: background-image 0.5s;
+}
+
+.dropdown-content a {
+    padding: 10px;
+    display: block;
+    background-color: #808080;
+}
+
+.menu li:hover .dropdown-content {
+    display: block;
+    transition: background-color 0.5s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.5s;
+}
+
+.content_a {
+    background-image: url("grass.jpg");
+    background-size: cover;      
+    background-position: top;  
+    background-repeat: no-repeat; 
+    text-decoration: none;
+    position: relative;
+    background-color: rgb(105, 68, 19);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    min-height: 100px;
+}
+.content_b, .content_c, .content_d {
+    background-image: url("dirt.png");
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-color: rgb(105, 68, 19);
+    text-align: center;
+    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    min-height: 50px;
+}
+
+.content_e, .content_g, .content_h, .content_i {
+    background-color: rgb(170, 143, 92);
+    text-align: center;
+    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 50vh;
+}
+
+.content_f  {
+    background-color: rgb(170, 143, 92);
+    text-align: center;
+    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    height: 50vh;
+}
+/* Skeleton End*/
+
+
+/* Crafting Table */
+.crafting-ui {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+    background-color: #c6c6c6;
+    border-bottom: 4px solid #5b5b5b;
+    border-right: 4px solid #5b5b5b;
+    border-left: 4px solid #dbdbdb;
+    border-top: 4px solid #dbdbdb;
+    width: max-content;
+    box-shadow: 0 0 15px #000;
+}
+  
+.crafting-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 54px);
+    grid-template-rows: repeat(3, 54px);
+    padding: 8px;
+    background-color: #c6c6c6;
+}
+  
+.slot, .output-slot {
+    width: 54px;
+    height: 54px;
+    background-color: #8b8b8b;
+    box-shadow: inset -2px -2px 0 #ffffff, inset 2px 2px 0 #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.output-slot {
+    background-color: #8b8b8b;
+}
+  
+.arrow {
+    font-size: 28px;
+    color: #8b8b8b;
+    user-select: none;
+}
+
+.slot img {
+    width: 90%;
+    height: 90%;
+}
+/* Crafting End*/
