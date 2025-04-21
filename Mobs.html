@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="CSS/mobs.css">
     </head>
     <body>
+        
         <div id="container">
             <div id="header">
 
@@ -21,7 +22,7 @@
                         <li class="menu"><a href="#moreMovies">Beating the Game</a></li>
                     </ul>
                 </div>
-                <div id="content_a">
+                <div class="content_a">
                     <p>
                         Mobs spawn everywhere and in every dimension. There are three type of mobs: passive, neutral and hostile.
                         <li><b>Passive mobs</b> will not attack you back under any circemstance</li>
@@ -29,7 +30,7 @@
                         <li><b>Hostile mobs</b> will always try to attack when you are in range for them to see you</li>
                     </p>
                     <p>
-                        <table border="forestgreen">
+                        <table border>
                             <tr>
                                 <td>picture of enderman & enderman label?</td>
                                 <td>strengths & weaknesses</td>
@@ -41,11 +42,18 @@
                     <button type="button" onclick="overworldFunction()">Overworld</button>
                     <button type="button" onclick="netherFunction()">Nether</button>
                     <button type="button" onclick="endFunction()">End</button>
-                    <script src="JavaScript/mobs.js"></script>
+                    <script src="JavaScript/mobs.js" >
+                        document.write("Hello World!");
+                        overworldFunction(); /*sets default to overworld*/
+                    </script>
                 </div>
-                <div id="content_b">
-                    test test
+                <div class="content_b">
+                    <table id="table" border></table>
+                    
                 </div>
+                <script src="JavaScript/mobs.js">
+                    overworldFunction(); /*sets default to overworld*/
+                </script>
             </div>
         
     </body>

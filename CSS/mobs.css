@@ -7,6 +7,16 @@ h2 {
     margin: 0;
 }
 
+table {
+    border-color: rebeccapurple;
+    border-width: 3px;
+    border-spacing: 0px;
+    text-align: center;
+}
+table img {
+    height: 100px;
+}
+
 #container {
     width: 100vw;
     display: grid;
@@ -23,14 +33,10 @@ h2 {
 
 .content_a {
     grid-area: a;
-    width: 100vw;
-    height: 40vh;
 }
 
 .content_b {
     grid-area: b;
-    height: 40vh;
-    width: 100vw;
     background-color: aquamarine;
 }
 
