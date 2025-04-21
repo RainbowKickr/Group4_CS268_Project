@@ -4,7 +4,7 @@ body
     display: grid;
     min-width: max-content;
     flex-shrink: 0;
-    background-image: url('minecraft.png')
+    background-image: url('/Images/minecraft.png')
    
 }
 
