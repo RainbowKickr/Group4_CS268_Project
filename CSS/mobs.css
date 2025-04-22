@@ -9,8 +9,19 @@ table img {
     height: 100px;
 }
 
-.content_e,
-.content_g {
-    width: 80vw;
-    height: 80vh;
+.container {
+    display: grid;
+    background-color: #E6ECF0;
+    width: 100vw;
+    height: auto;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "d d d d d d d d d d";
+}
+
+.content_f {
+    height: 550vh;
 }
