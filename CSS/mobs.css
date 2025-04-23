@@ -3,10 +3,13 @@ table {
     border-width: 3px;
     border-spacing: 0px;
     text-align: center;
-    width: 80vw;
+    
 }
 table img {
     height: 100px;
+}
+button {
+    padding: 10px 40px;
 }
 
 .container {
@@ -16,12 +19,22 @@ table img {
     height: auto;
     grid-template-areas:
         "a a a a a a a a a a"
+        "b e e e e e e e e c"
         "b f f f f f f f f c"
         "b f f f f f f f f c"
         "b f f f f f f f f c"
         "d d d d d d d d d d";
 }
 
+.content_e{
+    height: 75vh;
+}
+
 .content_f {
-    height: 550vh;
+    height: 1363vh;
+}
+.content_b,
+.content_c 
+{
+    width: 3vw;
 }

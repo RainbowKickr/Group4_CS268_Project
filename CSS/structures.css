@@ -1,0 +1,31 @@
+button {
+    padding: 10px 40px;
+}
+p
+{
+   margin:3vw;
+}
+.container {
+    display: grid;
+    background-color: #E6ECF0;
+    width: 100vw;
+    height: auto;
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b e e e e e e e e c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "b f f f f f f f f c"
+        "d d d d d d d d d d";
+}
+
+.content_b,
+.content_c 
+{
+    width: 3vw;
+}
+
+.content_e
+{
+    height: 25vh;
+}

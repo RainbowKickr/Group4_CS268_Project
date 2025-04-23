@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .scroll-background {
+            width: 100%;
+            height: 350px;
+            background-image: url("/Images/MC_sky.png");
+            background-size: cover;      
+            background-position: center;  
+            background-repeat: no-repeat; 
+            transition: height 0.5s;
+        }
+
+        .container {
+            display: grid;
+            background-color: #E6ECF0;
+            width: 100vw;
+            height: auto;
+            grid-template-areas:
+                "a a a a a a a a a a"
+                "b e e e e e e e e c"
+                "b f f f f f f f f c"
+                "b f f f f f f f f c"
+                "b f f f f f f f f c"
+                "b g g g g g g g g c"
+                "b h h h h h h h h c"
+                "b i i i i i i i i c"
+                "d d d d d d d d d d";
+        }
+
+        .content_a { grid-area: a; }
+        .content_b { grid-area: b; }
+        .content_c { grid-area: c; }
+        .content_d { grid-area: d; }
+        .content_e { grid-area: e; }
+        .content_f { grid-area: f; }
+        .content_g { grid-area: g; }
+        .content_h { grid-area: h; }
+        .content_i { grid-area: i; }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            background-image: url("/Images/stone.jpg");
+            background-size: cover;      
+            background-position: center;  
+            background-repeat: no-repeat; 
+            padding: 17px;
+            font-size: 20px;
+            display: block;
+            background-color: #a8a6a6;
+            color: rgb(242, 195, 38);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f9f9f9;
+            z-index: 1;
+            min-width: 180px;
+        }
+
+        ul.menu li a:hover {
+            background-image: 
+                linear-gradient(rgba(196, 151, 0, 0.6), rgba(173, 148, 5, 0.2)), 
+                url("/Images/gold.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(255, 255, 255);
+            transition: background-image 0.5s;
+        }
+
+        .dropdown-content a {
+            padding: 10px;
+            display: block;
+            background-color: #808080;
+        }
+
+        .menu li:hover .dropdown-content {
+            display: block;
+            transition: background-color 0.5s;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.5s;
+        }
+
+        .content_a {
+            background-image: url("/Images/grass.jpg");
+            background-size: cover;      
+            background-position: top;  
+            background-repeat: no-repeat; 
+            text-decoration: none;
+            position: relative;
+            background-color: rgb(105, 68, 19);
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            min-height: 100px;
+        }
+        .content_b, .content_c, .content_d {
+            background-image: url("/Images/dirt.png");
+            background-size: cover;      
+            background-position: center;  
+            background-repeat: no-repeat; 
+            background-color: rgb(105, 68, 19);
+            text-align: center;
+            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            min-height: 50px;
+        }
+
+        .content_e, .content_g, .content_h, .content_i {
+            background-color: rgb(170, 143, 92);
+            text-align: center;
+            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            height: 50vh;
+        }
+
+        .content_f  {
+            background-color: rgb(170, 143, 92);
+            text-align: center;
+            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            height: 150vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-background" id="scrollBackground"></div>
+
+    <div class="container">
+        <div class="content_a">
+            <img src="/Images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#">Gameplay</a>
+                    <div class="dropdown-content">
+                        <a href="#moments">Basics</a>
+                        <a href="#notifications">Crafting Recipes</a>
+                        <a href="#messages">Farms</a>
+                        <a href="#messages">Beating the game</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Exploration</a>
+                    <div class="dropdown-content">
+                        <a href="#messages">Caving</a>
+                        <a href="#messages">Structures</a>
+                        <a href="#messages">Biomes</a>
+                    </div>
+                </li>
+                <li><a href="#mobs">Mobs</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+        <div class="content_b"></div>
+        <div class="content_c"></div>
+        <div class="content_d"></div>
+        <div class="content_e">
+            <h1 style="font-family: 'Pixelify Sans', sans-serif; color: #4b4b4b;">Deep Dive: Minecraft Caves</h1>
+        </div>
+        
+        <div class="content_f">
+            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Common Cave Resources</h2>
+            <table style="margin: 0 auto; border-collapse: collapse; font-family: 'Pixelify Sans', sans-serif;">
+                <thead>
+                    <tr style="background-color: #d6d6d6;">
+                        <th style="padding: 10px; border: 1px solid #aaa;">Resource</th>
+                        <th style="padding: 10px; border: 1px solid #aaa;">Y-Level Range</th>
+                        <th style="padding: 10px; border: 1px solid #aaa;">Best Level</th>
+                        <th style="padding: 10px; border: 1px solid #aaa;">Uses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Coal</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=0 to 256</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=96 (mountains)</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Torches, Fuel</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Iron</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-64 to 256</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=16 or mountains</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Tools, Armor</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Copper</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-16 to 112</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=48</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Building, Lightning Rods</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Gold</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-64 to 32</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-16 (or Badlands)</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Tools, Trading, Crafting</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Redstone</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-64 to 15</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-59</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Mechanisms</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Lapis Lazuli</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-64 to 64</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=0</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Enchanting, Dyes</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Diamonds</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-64 to 16</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-59</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">High-tier Gear</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Emerald</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=-16 to 256</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Y=236 (mountains)</td>
+                        <td style="padding: 10px; border: 1px solid #aaa;">Trading</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="/Images/ore-distribution.jpg" alt="ore-distribution" style="max-width: 1000px; width: 100%; height: auto;">
+
+        </div>
+        
+        <div class="content_g">
+            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Cave Types</h2>
+            <p style="max-width: 700px; margin: 0 auto;">Minecraft caves come in many forms, including lush caves filled with greenery and glow berries, dripstone caves with stalactites and stalagmites, and deep slate layers that feel more dangerous and isolated. Each cave type has unique blocks and threats.</p>
+        </div>
+        
+        <div class="content_h">
+            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Cave Dangers</h2>
+            <ul style="max-width: 700px; margin: 0 auto; text-align: left;">
+                <li><strong>Darkness:</strong> Without torches, mobs will spawn frequently.</li>
+                <li><strong>Lava:</strong> Pools are common and deadly.</li>
+                <li><strong>Mobs:</strong> Expect skeletons, creepers, and even Warden in the Deep Dark.</li>
+                <li><strong>Falling:</strong> Deep caverns and dripstone spikes can cause serious damage.</li>
+            </ul>
+        </div>
+        
+        <div class="content_i">
+            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Pro Tips</h2>
+            <p style="max-width: 700px; margin: 0 auto;">Always bring a bucket of water to handle lava, extra pickaxes for long trips, and a shield for creeper encounters. Lighting up caves as you go will prevent backtracking into monster-infested areas.</p>
+        </div>
+    </div>
+
+    <script>
+        const background = document.getElementById("scrollBackground");
+
+        window.addEventListener("scroll", () => {
+            let scrollY = window.scrollY;
+            let newHeight = Math.max(0, 200 - scrollY);
+            background.style.height = `${newHeight}px`;
+        });
+    </script>
+</body>
+</html>
