@@ -3,20 +3,31 @@ table {
     border-width: 3px;
     border-spacing: 0px;
     text-align: center;
-    
+    width: 94vw;
+    margin: 5px;
+
 }
+
 table img {
     height: 100px;
 }
+
 button {
     padding: 10px 40px;
+    border: 0;
+    border-radius: 5%;
+    margin: 4px 2px;
+}
+
+button:hover
+{
+    color: white;
+    transition: background-image 0.5s;
+    cursor: pointer;
 }
 
 .container {
-    display: grid;
-    background-color: #E6ECF0;
-    width: 100vw;
-    height: auto;
+    background-color: white;
     grid-template-areas:
         "a a a a a a a a a a"
         "b e e e e e e e e c"
@@ -26,15 +37,16 @@ button {
         "d d d d d d d d d d";
 }
 
-.content_e{
-    height: 75vh;
+.content_e {
+    height: 60vh;
+    min-height: 475px;
 }
 
 .content_f {
-    height: 1363vh;
+    width: 94vw;
 }
+
 .content_b,
-.content_c 
-{
+.content_c {
     width: 3vw;
 }

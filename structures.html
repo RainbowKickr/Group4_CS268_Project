@@ -5,67 +5,59 @@
     <link rel="icon" type="image/ico" href="Images/Minecraft_favicon.ico">
     <link rel="stylesheet" href="CSS/formatSkeleton.css">
     <link rel="stylesheet" href="CSS/structures.css">
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="scroll-background" id="scrollBackground"></div>
+    <div class="scroll-background" id="scrollBackground">
 
-    <div class="container">
-        <div class="content_a">
-            <img src="/images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li>
-                    <a href="#">Gameplay</a>
-                    <div class="dropdown-content">
-                        <a href="BeginnersBasics.html">Basics</a>
-                        <a href="CraftingRecipes.html">Crafting Recipes</a>
-                        <a href="UsefulFarms.html">Farms</a>
-                        <a href="BeatingTheGame.html">Beating the game</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">Exploration</a>
-                    <div class="dropdown-content">
-                        <a href="Caves.html">Caving</a>
-                        <a href="structures.html">Structures</a>
-                        <a href="biomes.html">Biomes</a>
-                    </div>
-                </li>
-                <li><a href="Mobs.html">Mobs</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
+        <div class="container">
+            <div class="content_a">
+                <img src="/images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
+                <ul class="menu">
+                    <li><a href="projecttype1.html">Home</a></li>
+                    <li>
+                        <a href="#">Gameplay</a>
+                        <div class="dropdown-content">
+                            <a href="BeginnersBasics.html">Basics</a>
+                            <a href="CraftingRecipes.html">Crafting Recipes</a>
+                            <a href="UsefulFarms.html">Farms</a>
+                            <a href="BeatingTheGame.html">Beating the game</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Exploration</a>
+                        <div class="dropdown-content">
+                            <a href="Caves.html">Caving</a>
+                            <a href="structures.html">Structures</a>
+                            <a href="biomes.html">Biomes</a>
+                        </div>
+                    </li>
+                    <li><a href="Mobs.html">Mobs</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </div>
+            <div class="content_b"></div>
+            <div class="content_c"></div>
+            <div class="content_d"></div>
+            <div class="content_e">
+                <br>Structures are naturally spawning places that provide loot should you venture to find them and
+                successfully avoid any enemies or traps
+                <br>Click on the buttons below to learn more about the different structures in each dimension!<br><br>
+                <button type="button" onclick="overworldFunction()" style="background-color:cornflowerblue;">Overworld</button>
+                <button type="button" onclick="netherFunction()" style="background-color:indianred;">Nether</button>
+                <button type="button" onclick="endFunction()" style="background-color:mediumpurple;">End</button>
+            </div>
+            <div class="content_f" id="f">
+                <p id="info"></p>
+                
+            </div>
         </div>
-        <div class="content_b"></div>
-        <div class="content_c"></div>
-        <div class="content_d"></div>
-        <div class="content_e">
-            <br>Structures are naturally spawning places that provide loot should you venture to find them and successfully avoid any enemies or traps 
-            <br>Click on the buttons below to learn more about the different structures in each dimension!<br><br>
-            <button type="button" onclick="overworldFunction()">Overworld</button>
-            <button type="button" onclick="netherFunction()">Nether</button>
-            <button type="button" onclick="endFunction()">End</button>
-        </div>
-        <div class="content_f">
-            <p id="info"></p>
-        </div>
-        
+        <script src="JavaScript/structures.js"></script>
     </div>
-    <script src="JavaScript/structures.js">
-        netherFunction(); /*sets default to overworld*/
-    </script>
-    <script>
-        const background = document.getElementById("scrollBackground");
 
-        window.addEventListener("scroll", () => {
-            let scrollY = window.scrollY;
-            let newHeight = Math.max(0, 200 - scrollY);
-            background.style.height = `${newHeight}px`;
-        });
 
-    </script>
 </body>
 
 </html>
