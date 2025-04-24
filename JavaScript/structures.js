@@ -44,7 +44,7 @@ function endFunction() {
         "then there is an elytra also at the city, which when paired with flight rockets allow you to travel much faster than most modes of transportation.</p>";
         document.getElementById("f").style.height = "75vh";
 }
-endFunction(); /*sets default to overworld*/
+overworldFunction(); /*sets default to overworld*/
 
 const background = document.getElementById("scrollBackground");
 
