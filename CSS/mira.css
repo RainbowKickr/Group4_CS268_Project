@@ -1,0 +1,71 @@
+button {
+    border: 0;
+    margin: 4px 10px;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: x-large;
+    border: none;
+    border-radius: 8px;
+    height: 70;
+    width: 160;
+}
+
+.button1
+{
+    background-color: cornflowerblue;
+}
+
+.button2
+{
+    background-color: indianred;
+}
+
+.button3
+{
+    background-color: mediumpurple;
+}
+
+button:hover
+{
+    color: white;
+    transition: background-color 0.1s;
+}
+
+.button1:hover
+{
+    background-color: rgb(64, 107, 186);
+}
+
+.button2:hover
+{
+    background-color: rgb(177, 58, 58);
+}
+
+.button3:hover
+{
+    background-color: rgb(110, 71, 190);
+}
+
+h1, h3
+{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+h3
+{
+    font-size: x-large;
+}
+
+.content_b,
+.content_c {
+    width: 3vw;
+}
+
+.content_e
+{
+    height: auto;
+}

@@ -1,6 +1,7 @@
 function overworldFunction() {
     document.getElementById("table").innerHTML =
-    /* Titles */"<tr><td>Overworld Mob Picture</td><td>Health</td><td>Aggression Status</td><td>Natural Spawn</td><td>Other Info</td></tr>" +
+    /* Heading */"<tr><td colspan=5><h3>Overworld</h3></td></tr>" +
+    /* Titles */"<tr><td>Mob Picture</td><td>Health</td><td>Aggression Status</td><td>Natural Spawn</td><td>Other Info</td></tr>" +
     /* Axolotl */"<tr><td><img src='/images/axolotl.avif' alt='axolotl'><p>Axolotl</p></td><td>7 hearts</td><td>Passive<p>Hostile with fish and drowned</p></td><td>Lush Caves</td><td>Can be picked up in a bucket<p>Can grant play dead and possibly gain regeneration</p></td></tr>" +
     /* Bat */"<tr><td><img src='/images/bat.jpg' alt='bat'><p>Bat</p></td><td>3 hearts</td><td>Passive</td><td>Anywhere with light level 3 or under</td><td>Don't drop anything when killed</td></tr>" +
     /* Bee */"<tr><td><img src='/images/bee.jpg' alt='bee'><p>Bee</p></td><td>5 hearts</td><td>Neutral<p>Hostile with anything that damages the bee or the hive without a campfire under it</p></td><td>Spawns with beehive in:<p>Medow, Plains, Sunflower Plains, Mangrove Swamp, Flower Forest, Forest, Birch Forest, Old Growth Birch Forest & Cherry Grove</p></td><td>Takes pollen from nearby flowers and takes back to hive, pollen dripping from bees speed up crop growth<p>When bee is hostile with player eyes turn red and attempts to stings player. If the bee stings a player, the player is poisoned and the bee dies after roughly 1 minute</p></td></tr>" +
@@ -52,12 +53,13 @@ function overworldFunction() {
     /* Wolf */"<tr><td><img src='/images/wolves.webp' alt='wolf'><p>Wolf</p></td><td>4 hearts (wild)<p>20 hearts (tamed)</p></td><td>Neutral<p>Passive to owner if tamed</p><p>Hostile to foxes, sheep, rabbits, baby turtles & skeletons</p></td><td>Forest, grove, old growth pine taiga, old growth spruce taiga, savanna plateau, snowy taiga, taiga & wooded badlands</td><td>Can put armor on tamed wolf and they won't take damage until the armor breaks</td></tr>" +
     /* Zombie */"<tr><td><img src='/images/zombie.jpg' alt='zombie'><p>Zombie</p></td><td>10 hearts</td><td>Hostile</td><td>With light level 0<p>Mob spawners from dungeons</p><p>Trial spawners in Trial Chambers</p></td><td>Baby zombies can spawn on top of chickens to create chicken jockeys<p>Burns in daylight</p></td></tr>" +
     /* Zombie Villager */"<tr><td><img src='/images/zombieVillager.jpg' alt='zombie villager'><p>Zombie Villager</p></td><td>10 hearts</td><td>Hostile</td><td>When light level at 0</td><td>Can be turned back into villagers when the weakness effect is applied and fed a golden apple</td></tr>";
-    document.getElementById("f").style.height = "1361vh";
+    document.getElementById("f").style.height = "auto";
 }
 
 function netherFunction() {
     document.getElementById("table").innerHTML =
-    /* Titles */"<tr><td>Overworld Mob Picture</td><td>Health</td><td>Aggression Status</td><td>Natural Spawn</td><td>Other Info</td></tr>" +
+    /* Heading */"<tr><td colspan=5><h3>Nether</h3></td></tr>" +
+    /* Titles */"<tr><td>Mob Picture</td><td>Health</td><td>Aggression Status</td><td>Natural Spawn</td><td>Other Info</td></tr>" +
     /* Blaze */"<tr><td><img src='/images/blaze.jpg' alt='blaze'><p>Blaze</p></td><td>10 hearts</td><td>Hostile</td><td> Nether fortress (light level 11 and below or from mob spawners</td><td>Immune to fire and lava damage<p>Drops blaze rods when killed</p></td></tr>" +
     /* Ghast */"<tr><td><img src='/images/ghast.jpg' alt='ghast'><p>Ghast</p></td><td>10 hearts</td><td>Hostile</td><td>Nether wastes, soul sand valley & basalt deltas</td><td>Shoots fireballs when it sees a player<p>Can drop ghast tears and gunpowder when killed</p></td></tr>" +
     /* Hoglin */"<tr><td><img src='/images/hoglin.jpg' alt='hoglin'><p>Hoglin</p></td><td>20 hearts</td><td>Hostile</td><td>Bastion remnant & crimson forest</td><td>Scared of warped fungi, active nether portals & respawn anchors<p>Its attacks can throw entities a little bit up in the air</p></td></tr>" +
@@ -65,15 +67,14 @@ function netherFunction() {
     /* Piglin */"<tr><td><img src='/images/piglin.jpg' alt='piglin'><p>Piglin</p></td><td> </td><td>Neutral (if player is wearing gold)</td><td>bastion remnant, crimson forest & nether wastes</td><td>Turns hostile if player attacks a piglin or mines gold too close to a piglin</td></tr>" +
     /* Piglin Brute */"<tr><td><img src='/images/piglinBrute.jpg' alt='piglin brute'><p>Piglin Brute</p></td><td>25 hearts</td><td>Hostile</td><td>Bastion remnant</td><td>Always spawns with a gold axe and is always hostile with players even if they're wearing gold</td></tr>" +
     /* Wither Skeleton */"<tr><td><img src='/images/witherSkeleton.jpg' alt='wither skeleton'><p>Wither Skeleton</p></td><td>10 hearts</td><td>Hostile</td><td>Nether fortress</td><td>Applies wither effect when attacking other entities<p>Can walk through wither roses without gaining the wither effect</p></td></tr>";
-    document.getElementById("f").style.height = "190vh";
 }
 
 function endFunction() {
     document.getElementById("table").innerHTML =
-    /* Titles */"<tr><td>Overworld Mob Picture</td><td>Health</td><td>Aggression Status</td><td>Natural Spawn</td><td>Other Info</td></tr>" +
+    /* Heading */"<tr><td colspan=5><h3>End</h3></td></tr>" +
+    /* Titles */"<tr><td>Mob Picture</td><td>Health</td><td>Aggression Status</td><td>Natural Spawn</td><td>Other Info</td></tr>" +
     /* Ender Dragon */"<tr><td><img src='/images/enderDragon.jpg' alt='ender dragon'><p>Ender Dragon</p></td><td>100 hearts</td><td>Hostile</td><td>Center island in the End</td><td>Heals from end crystals<p>Once killed, drops a lot of XP and opens the End portal if the dragon was spawned in the End</p></td></tr>" +
     /* Shulker */"<tr><td><img src='/images/shulker.jpg' alt='shulker'><p>Shulker</p></td><td>15 hearts</td><td>Hostile</td><td>End city</td><td>Shoots crystals that track a player and give levetation effect when they hit the player<p>Can teleport if it takes too much damage</p></td></tr>";
-    document.getElementById("f").style.height = "62vh";
 }
 
 overworldFunction(); /*sets default to overworld*/

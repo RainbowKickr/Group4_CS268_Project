@@ -1,17 +1,21 @@
 function overworldFunction() {
-    document.getElementById("info").innerHTML = "stronghold" +
-        "<br>ancient city" +
-        "<br>pillager outpost" +
-        "<br>village" +
-        "<br>desert temple" +
-        "<br>woodland mansion" +
-        "<br>ocean monument" +
-        "<br>trial chambers" +
-        "<br>trail ruins";
+    document.getElementById("info").innerHTML = 
+        /* Heading */"<h1>Overworld</h1>" +
+        /* Ancient city */"<h3>Ancient City</h3>" +
+        /* Desert Temple */"<br>desert temple" +
+        /* Ocean Monument */"<br>ocean monument" +
+        /* Piller outpost */"<br>pillager outpost" +
+        /* Stronghold */"stronghold" +
+        /* Trial Chambers */"<br>trial chambers" +
+        /* Trail Ruins */"<br>trail ruins" +
+        /* Village */"<br>village" +
+        /* Woodland Mansion */"<br>woodland mansion";
+        document.getElementById("f").style.height = "auto";
 }
 
 function netherFunction() {
     document.getElementById("info").innerHTML =
+    /* Heading */ "<h1>Nether Structures</h1>" +
     /* Bastion Remnent */"<h3>Bastion Remnent</h3><img src ='/Images/bastionRemnent.jpg' alt='bastion remnent' style='float:right;'>" +
         "<p>Bastion remnants or 'bastions'are found in every nether biome except basalt deltas. They are full of piglins, which can be avoided if a player wears gold. " +
         "Piglin brutes and the occasional hoglin ignore gold and hit very hard, so it's recommended to bring a shield. If a player hits a piglin brute, " +
@@ -28,21 +32,21 @@ function netherFunction() {
         "that in the Nether, the decorative frame is made up of blackstone, whereas Overworld ruined portals have a decorative frame made up of stone. " +
         "Ruined portals are the only structures that generate in more than one dimension, and they spawn in any biome in the nether. In air-pockets they spawn between Y-level 32-100 and in open air they spawn between Y-level 27-100. "+
         "There is a 5% chance a giant ruined portal can spawn instead of a small nether portal.</p>" +
-        "<p>Notable loot from ruined portals is gold, golden apples, enchanted golden apples, lodestones, golden carrots, glistering melon slices and bells. If iron or gold nuggets are rolled for loot, they spawn in groups of 9-18 and 4-24 respectfully instead of singularly.</p>" +
-    /* Nether Fossil */"<br><img src='/Images/netherFossil.jpg' alt='nether fossil' style='float:left'><h3>Nether Fossil</h3><p>Nether fossils only spawn in soul sand vallies and are solely comprised of bone blocks.</p>" +
-    "<p>The only notable loot is the bone blocks from the fossil, and dried ghasts that will be added in a future update.</p>";
-    document.getElementById("f").style.height = "175vh";
+        "<p>Notable loot from ruined portals is gold, golden apples, enchanted golden apples, lodestones, golden carrots, glistering melon slices and bells. " +
+        "If iron or gold nuggets are rolled for loot, they spawn in groups of 9-18 and 4-24 respectfully instead of singularly.</p>" +
+    /* Nether Fossil */"<br><img src='/Images/netherFossil.jpg' alt='nether fossil' style='float:left;margin: 0px 15px 50px 15px'><h3>Nether Fossil</h3><p>Nether " +
+        "fossils only spawn in soul sand vallies and are solely comprised of bone blocks.</p>" +
+        "<p>The only notable loot is the bone blocks from the fossil, and dried ghasts that will be added in a future update.</p>";
 }
 
 function endFunction() {
     document.getElementById("info").innerHTML = 
-        /* End City */"<h3>End City</h3><img src=/Images/endCity.avif alt='end city' style='float:left;width:550px;'>" +
+        /* End City */"<h3>End City</h3><img src=/Images/endCity.avif alt='end city' style='float:left;width:550px;margin: 0px 15px 50px 15px'>" +
         "<p>There is only one structure in the End, End Cities. End cities are found on the larger, outer islands in the End. Shulkers are the only mob that spawn in end cities, " +
         "though enderman can teleport into end cities. So it's recommended you bring a shield to deflect levation crystals, a carved pumpkin to be used in the " +
         "presence of enderman and some form of way to save yourself from plummeting to your death</p><p>These cities can have enchanted diamond armor, tools and loose diamonds, emeralds, gold and iron. " +
         "These cities also have shulks, which can drop shulker shells that can be used to create shulker boxes. If there is a floating boat at the end city, " +
         "then there is an elytra also at the city, which when paired with flight rockets allow you to travel much faster than most modes of transportation.</p>";
-        document.getElementById("f").style.height = "75vh";
 }
 overworldFunction(); /*sets default to overworld*/
 
