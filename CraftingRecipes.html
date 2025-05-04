@@ -10,7 +10,7 @@
 
         <div class="container">
             <div class="content_a">
-                <img src="./Project-Skeleton-/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
+                <img src="./Images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li>
@@ -39,48 +39,283 @@
             <div class="content_d"></div>
             
             <div class="content_e">
-                <div class="crafting-ui">
-                    <div class="crafting-grid">
-                        <div class="slot"><img src="./Images/stone.jpg" alt="stone"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                    </div>
-                    <div class="arrow">🡆</div>
-                    <div class="output-slot"></div>
+                <h1>Crafting Shape</h1>
+                <p>Crafting in Minecraft is pretty simple once you get to know it but there are some tricks to it when it comes to crafting shapes. 
+                    There's three categories of crafting shapes, shapeless, shaped, and fixed. Shapeless crafting recipes are simple, you're ingredients
+                    can go into any slot on the crafting grid and you'll be able to craft your item. Shapeless is a little more restrictive, your
+                    crafting ingredients have to form a specific shape,  for example, a 2x2 square, 1x3 rectangle, and x-shaped are all examples of
+                    crafting shapes, these crafting shapes can be placed anywhere they can fit in a 2x2 or 3x3 crafting grid. Fixed crafting shape is
+                    similar to shaped in that you create a shape except that it only works in one position, this is usually reserved for bigger crafting
+                    recipes that take up most of the 3x3 crafting grid.
+                </p>
+                <h1>Building Blocks</h1>
+                <div class="section">
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Recipe</th>
+                            <th>Ingredients</th>
+                            <th>Output</th>
+                            <th>Crafting Shape</th>
+                        </tr>
+                        <tr>
+                            <td class="name">Wood</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_log.png" alt="log"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_log.png" alt="log"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_log.png" alt="log"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_log.png" alt="log"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_wood.png" alt=""></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">4x Logs of any wood type</td>
+                            <td>3x Wood</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Stripped Wood</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"><img src="./Images/Items/minecraft_stripped_oak_log.png" alt="stripped log"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stripped_oak_log.png" alt="stripped log"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stripped_oak_log.png" alt="stripped log"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stripped_oak_log.png" alt="stripped log"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_stripped_oak_wood.png" alt=""></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">4x Stripped Logs of any wood type</td>
+                            <td>3x Stripped Wood</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Planks</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_log.png" alt="Log"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_planks.png" alt=""></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">1x Log of any wood type</td>
+                            <td>4x Planks</td>
+                            <td class="shape">Shapeless</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Stairs</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_stairs.png" alt="Stairs"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">6x Planks of any wood type</td>
+                            <td>4x Planks</td>
+                            <td class="shape">Shaped (mirrored)</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Slabs</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_slab.png" alt="Slab"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">3x Planks of any wood type</td>
+                            <td>6x Slabs</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Fences</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stick.png" alt="Stick"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stick.png" alt="Stick"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_fence.png" alt="Slab"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">4x Planks of any wood type and 2x sticks</td>
+                            <td>3x Fences</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Fence Gates</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stick.png" alt="Stick"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stick.png" alt="Stick"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stick.png" alt="Stick"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_stick.png" alt="Stick"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_fence_gate.png" alt="Fence Gate"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">2x Planks of any wood type and 4x Sticks</td>
+                            <td>1x Fence Gate</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Doors</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_door.png" alt="Door"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">6x Planks of any wood type</td>
+                            <td>3x Doors</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Trapdoors</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_trapdoor.png" alt="Trapdoor"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">6x Planks of any wood type</td>
+                            <td>2x Trapdoors</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Pressure Plates</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_pressure_plate.png" alt="Pressure Plate"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">2x Planks of any wood type</td>
+                            <td>1x Pressure Plate</td>
+                            <td class="shape">Shaped</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Wooden Buttons</td>
+                            <td class="recipe">
+                                <div class="crafting-ui">
+                                    <div class="crafting-grid">
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"><img src="./Images/Items/minecraft_oak_planks.png" alt="Plank"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                        <div class="slot"></div>
+                                    </div>
+                                    <div class="arrow">🡆</div>
+                                    <div class="output-slot"><img src="./Images/Items/minecraft_oak_button.png" alt="Button"></div>
+                                </div>
+                            </td>
+                            <td class="ingredients">1x Plank of any wood type</td>
+                            <td>1x Button</td>
+                            <td class="shape">Shapeless</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="crafting-ui">
-                    <div class="crafting-grid">
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                        <div class="slot"></div>
-                    </div>
-                    <div class="arrow">🡆</div>
-                    <div class="output-slot"></div>
-                </div>
-            </div>
-            
-            <div class="content_f">
-            </div>
-            
-            <div class="content_g">
-            </div>
-            
-            <div class="content_h">
-            </div>
-            
+            </div>          
             <div class="content_i">
+
             </div>
         </div>
     

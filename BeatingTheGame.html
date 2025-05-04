@@ -1,165 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Demo</title>
-
+    <meta charset="UTF-8">
+    <title>BeatingTheGame</title>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .scroll-background {
-            width: 100%;
-            height: 350px;
-            background-image: url("/Images/MC_sky.png");
-            background-size: cover;      
-            background-position: center;  
-            background-repeat: no-repeat; 
-            transition: height 0.5s;
-        }
-
-        .container {
-            display: grid;
-            background-color: #E6ECF0;
-            width: 100vw;
-            height: auto;
-            grid-template-areas:
-                "a a a a a a a a a a"
-                "b e e e e e e e e c"
-                "b f f f f f f f f c"
-                "b f f f f f f f f c"
-                "b f f f f f f f f c"
-                "b g g g g g g g g c"
-                "b h h h h h h h h c"
-                "b i i i i i i i i c"
-                "d d d d d d d d d d";
-        }
-
-        .content_a { grid-area: a; }
-        .content_b { grid-area: b; }
-        .content_c { grid-area: c; }
-        .content_d { grid-area: d; }
-        .content_e { grid-area: e; }
-        .content_f { grid-area: f; }
-        .content_g { grid-area: g; }
-        .content_h { grid-area: h; }
-        .content_i { grid-area: i; }
-
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        .menu li {
-            position: relative;
-        }
-
-        .menu a {
-            background-image: url("/Images/stone.jpg");
-            background-size: cover;      
-            background-position: center;  
-            background-repeat: no-repeat; 
-            padding: 17px;
-            font-size: 20px;
-            display: block;
-            background-color: #a8a6a6;
-            color: rgb(242, 195, 38);
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-            font-family: 'Pixelify Sans', sans-serif;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f9f9f9;
-            z-index: 1;
-            min-width: 180px;
-        }
-
-        ul.menu li a:hover {
-            background-image: 
-                linear-gradient(rgba(196, 151, 0, 0.6), rgba(173, 148, 5, 0.2)), 
-                url("/Images/gold.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: rgb(255, 255, 255);
-            transition: background-image 0.5s;
-        }
-
-        .dropdown-content a {
-            padding: 10px;
-            display: block;
-            background-color: #808080;
-        }
-
-        .menu li:hover .dropdown-content {
-            display: block;
-            transition: background-color 0.5s;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-            transition: background-color 0.5s;
-        }
-
-        .content_a {
-            background-image: url("/Images/grass.jpg");
-            background-size: cover;      
-            background-position: top;  
-            background-repeat: no-repeat; 
-            text-decoration: none;
-            position: relative;
-            background-color: rgb(105, 68, 19);
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            min-height: 100px;
-        }
-        .content_b, .content_c, .content_d {
-            background-image: url("/Images/dirt.png");
-            background-size: cover;      
-            background-position: center;  
-            background-repeat: no-repeat; 
-            background-color: rgb(105, 68, 19);
-            text-align: center;
-            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: rgb(0, 0, 0);
-            min-height: 50px;
-        }
-
-        .content_e, .content_g, .content_h, .content_i {
-            background-color: rgb(170, 143, 92);
-            text-align: center;
-            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: rgb(0, 0, 0);
-            height: 50vh;
-        }
-
-        .content_f  {
-            background-color: rgb(170, 143, 92);
-            text-align: center;
-            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: rgb(0, 0, 0);
-            height: 50vh;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/BeatingTheGame.css">
 </head>
 <body>
     <div class="scroll-background" id="scrollBackground"></div>
-
     <div class="container">
         <div class="content_a">
-            <img src="/Images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
+            <img src="Images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li>
@@ -182,45 +33,208 @@
                 <li><a href="Mobs.html">Mobs</a></li>
                 <li><a href="#login">Login</a></li>
             </ul>
-        </div>
+        </div> <!-- /.content_a -->
+
         <div class="content_b"></div>
         <div class="content_c"></div>
         <div class="content_d"></div>
-        
-        <div class="content_e">
-            <h1 style="font-family: 'Pixelify Sans', sans-serif; color: #4b4b4b;">Step 1: Gear Up for the Fight</h1>
-            <p style="max-width: 700px; margin: 0 auto;">Before heading to the End, you need to ensure you're fully prepared for battle. Equip yourself with the best possible gear. You'll want full diamond or netherite armor to take less damage from the Ender Dragon's attacks. Ensure you have a strong weapon, such as a diamond sword or bow, and enchant it with powerful enchants like Sharpness, Power, and Unbreaking for durability. Bring healing items such as potions of Healing and Strength, as well as blocks to help you with any difficult terrain you might encounter. Don’t forget plenty of arrows for your bow!</p>
-        </div>
-        
+
         <div class="content_f">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 2: Journey to the Nether</h2>
-            <p style="max-width: 700px; margin: 0 auto;">To prepare for the End, you'll need to gather Eyes of Ender. These are made by combining Blaze Powder (dropped by Blazes in the Nether) and Ender Pearls (dropped by Endermen). Blaze Powder can be obtained by crafting Blaze Rods, which you get from Blazes. The Nether can be dangerous, so bring plenty of food, weapons, and armor to fight off the hostile mobs. Once you’ve collected enough Blaze Powder and Ender Pearls, you can craft your Eyes of Ender.</p>
-        </div>
-        
-        <div class="content_g">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 3: Finding the Stronghold</h2>
-            <p style="max-width: 700px; margin: 0 auto;">With your Eyes of Ender crafted, it's time to locate a Stronghold. To do this, right-click while holding an Eye of Ender, and it will fly towards the nearest Stronghold. Follow its direction, and after a while, it will fall to the ground, so keep an eye out. This will lead you to a Stronghold, which is an underground structure that contains the End Portal. Once you find the Stronghold, search for the portal room where you’ll see a frame with missing Eyes. Place your Eyes of Ender into the empty slots to activate the portal.</p>
-        </div>
-        
-        <div class="content_h">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 4: Enter the End</h2>
-            <p style="max-width: 700px; margin: 0 auto;">When you're ready, jump into the activated End Portal. You'll find yourself in a dark, floating dimension known as the End. The End is surrounded by a dangerous void, so be careful as you enter. It's recommended to bring blocks to create safe platforms and bridges. The End is home to the Ender Dragon, and your goal is to defeat it. Be sure to bring plenty of healing potions and food, as you'll need it for the battle ahead!</p>
-        </div>
-        
-        <div class="content_i">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 5: Defeat the Ender Dragon</h2>
-            <p style="max-width: 700px; margin: 0 auto;">Once in the End, your objective is to defeat the Ender Dragon. Begin by destroying the Ender Crystals located on obsidian towers. These crystals heal the Ender Dragon, so destroying them is essential. After that, focus your attacks on the Ender Dragon, using your bow to shoot at it from a distance. Keep an eye on your health and use potions to heal as needed. When the Ender Dragon's health is low, finish the fight with your sword, but be ready to dodge its attacks. After you defeat the Ender Dragon, the portal back to the Overworld will open, and you’ll be rewarded with experience and the dragon egg!</p>
-        </div>
-    </div>
+            <h1>Beating the Game and Beyond</h1>
+            <h2>Mid-Game (Nether Fortress, Potions, Pearls)</h2>
+            <p>Once iron gear and basic supplies are ready, advance to mid‑game objectives and start working toward beating the game.</p>
+            <ul>
+                <li>
+                    <strong>Locate a Nether Fortress:</strong>
+                    In the Nether, roam at Y‑level ~64 and look for nether brick bridges.
+                    <a href="structures.html">Nether Fortresses</a> can spawn anywhere, but exploring
+                    <a href="structures.html">Basalt Deltas</a>,
+                    <a href="structures.html">Warped Forests</a>, and
+                    <a href="structures.html">Nether Wastes</a> biomes is effective.
+                    Use torches to light your path and block lava flows with a bucket.
+                </li>
+                <li>
+                    <strong>Collect Blaze rods:</strong>
+                    Inside the fortress, find and kill
+                    <a href="mobs.html">Blazes</a> at spawners. Blaze rods drop (about one rod per two Blazes).
+                    You need 4 rods (to make 12 blaze powder) for brewing and Eyes of Ender, plus extras for fuel.
+                    Build a safe cobblestone trap around the spawner to farm rods.
+                </li>
+                <li>
+                    <strong>Brew crucial potions:</strong>
+                    Use a Brewing Stand and Nether wart to make an Awkward Potion base. Key potions:
+                    Strength (adds melee damage against the dragon), Regeneration/Healing, and Slow Falling.
+                    Brewing Strength II (add blaze powder + glowstone) and Regeneration II (add glowstone) is ideal.
+                    Slow Falling requires Phantom Membranes (brew Awkward + Phantom Membrane).
+                    To get membranes, avoid sleeping until
+                    <a href="mobs.html">Phantoms</a> spawn at night and kill them (they drop membranes).
+                </li>
+                <li>
+                    <strong>Obtain Ender Pearls:</strong>
+                    Ender Pearls are needed for Eyes of Ender and in‑fight maneuvers. Efficient methods:
+                    <ul>
+                        <li>
+                            <strong>Kill Endermen:</strong>
+                            At night in the Overworld or in Nether
+                            <a href="structures.html">Warped Forests</a>, kill
+                            <a href="mobs.html">Endermen</a> for pearls (50% drop chance, up to 4 with Looting III).
+                            The Warped Forest biome has high Enderman spawn rates, making it ideal.
+                        </li>
+                        <li>
+                            <strong>Piglin Bartering:</strong>
+                            In the Nether, trade gold ingots with Piglins (~4.3% chance to get 3–4 pearls per ingot).
+                            Gather gold in Bastion Remnants and barter often—no fighting Endermen required.
+                        </li>
+                        <li>
+                            <strong>Cleric Trading (optional):</strong>
+                            Expert Cleric villagers can sell pearls (2⁄3 chance) for 5 emeralds each.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Gather gold and obsidian:</strong>
+                    Fortresses and Bastions contain gold blocks and obsidian in chests. Mine these for Piglin trades
+                    and portal construction.
+                </li>
+                <li>
+                    <strong>Progress your gear:</strong>
+                    Aim for diamond (or Netherite) armor and tools, craft a bow or crossbow,
+                    and collect ≥30 XP levels from Blazes or other mobs.
+                </li>
+            </ul>
 
-    <script>
-        const background = document.getElementById("scrollBackground");
+            <img src="Images/BeatingTheGame1.webp" alt="Blaze" style="width: 500px; height: auto;">
 
-        window.addEventListener("scroll", () => {
-            let scrollY = window.scrollY;
-            let newHeight = Math.max(0, 200 - scrollY);
-            background.style.height = `${newHeight}px`;
-        });
-    </script>
+            <h2>Preparing for The End</h2>
+            <ul>
+                <li>
+                    <strong>Strong Armor and Enchants:</strong>
+                    Full diamond or Netherite set with Protection IV and Feather Falling IV on boots.
+                    Add Unbreaking III and Mending via anvil or trades.
+                </li>
+                <li>
+                    <strong>Weapons and Tools:</strong>
+                    Diamond/Netherite sword (Sharpness V) and bow (Power V + Infinity) or crossbow
+                    (Multishot/Piercing). Pack a pickaxe, too.
+                </li>
+                <li>
+                    <strong>Food and Healing:</strong>
+                    High‑saturation food and Golden Apples (or Enchanted Golden Apples, if available).
+                </li>
+                <li>
+                    <strong>Potions:</strong>
+                    Carry Slow Falling, Strength, and Regeneration/Healing (drink or splash) potions.
+                </li>
+                <li>
+                    <strong>Inventory Layout:</strong>
+                    Sword, bow, pickaxe, golden apples, water bucket, slow-fall potion, ender pearls, blocks.
+                </li>
+                <li>
+                    <strong>Enchanting Tricks:</strong>
+                    Enchant books at a 15‑bookshelf table, then apply via anvil.
+                    Use grindstone to strip bad enchants (recovers some XP).
+                </li>
+            </ul>
+
+            <img src="Images/BeatingTheGame2.jpg" alt="Inventory" style="width: 500px; height: auto;">
+
+            <h2>Locating and Activating the End Portal</h2>
+            <ul>
+                <li>
+                    <strong>Craft Eyes of Ender:</strong>
+                    At least 15 total (12 for the portal + extras for breakage).
+                </li>
+                <li>
+                    <strong>Finding the Stronghold:</strong>
+                    Throw an Eye of Ender, follow its flight, and repeat until it descends.
+                    Plot multiple lines or use two players to triangulate quickly.
+                </li>
+                <li>
+                    <strong>Navigating the Stronghold:</strong>
+                    Cautiously explore corridors, listen for silverfish, kill the spawner,
+                    and block off hazards.
+                </li>
+                <li>
+                    <strong>Activating the Portal:</strong>
+                    Insert Eyes into each empty frame; portal will activate with a roar.
+                </li>
+                <li>
+                    <strong>Final Prep:</strong>
+                    Arrange your hotbar (sword, bow, golden apples, potions, blocks), then jump in.
+                </li>
+            </ul>
+
+            <img src="Images/BeatingTheGame3.webp" alt="Portal" style="width: 500px; height: auto;">
+
+            <h2>Defeating the Ender Dragon</h2>
+            <ul>
+                <li>
+                    <strong>Initial Landing:</strong>
+                    Immediately pearl or build to the main island. Press F3+B (Java) to see Enderman hitboxes.
+                </li>
+                <li>
+                    <strong>Take Out End Crystals:</strong>
+                    The dragon heals from crystals on obsidian pillars. Safe methods:
+                    <ul>
+                        <li><strong>Shoot from ground:</strong> Bow, snowballs, or eggs break them.</li>
+                        <li><strong>Climb towers:</strong> Pillar up or pearl to the top and break cages.</li>
+                        <li><strong>Water elevator:</strong> Place water at the base and swim up (carry a bucket).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Avoid Endermen:</strong>
+                    Place water around you or wear a carved pumpkin to keep them passive.
+                </li>
+                <li>
+                    <strong>Knockback Safety:</strong>
+                    Use a water-bucket MLG or slow-falling potion to negate knock-up damage.
+                </li>
+                <li>
+                    <strong>Dealing Damage:</strong>
+                    <ul>
+                        <li><strong>Ranged:</strong> Use Power V/Infinity bow or spectral arrows.</li>
+                        <li><strong>Melee:</strong> Strike the head when the dragon perches on the portal.</li>
+                        <li><strong>Beds:</strong> Explode beds inside the portal ring for huge damage.</li>
+                        <li><strong>End Crystals:</strong> Place and shoot your own crystals for extra explosion damage.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Staying Alive:</strong>
+                    Keep moving, eat golden apples, drink regen, and use pearls to teleport back if knocked away.
+                </li>
+                <li>
+                    <strong>Final Blow:</strong>
+                    Continue attacking until the dragon dies. Enjoy the explosion and purple beams.
+                </li>
+            </ul>
+
+            <img src="Images/BeatingTheGame4.avif" alt="Dragon" style="width: 500px; height: auto;">
+
+            <h2>After the Dragon</h2>
+            <ul>
+                <li>
+                    <strong>Collect the Dragon Egg:</strong>
+                    Break the block under it with a torch two blocks down so it drops onto the torch.
+                </li>
+                <li>
+                    <strong>Exit Portal:</strong>
+                    Jump in to see the End Poem and credits.
+                </li>
+                <li>
+                    <strong>End Gateways & End Cities:</strong>
+                    Throw a pearl into a gateway to reach outer islands. Loot Elytra, shulker boxes, and chorus fruit.
+                </li>
+                <li>
+                    <strong>Keep Exploring:</strong>
+                    Build farms, projects, or simply fly with Elytra and fireworks across the End.
+                </li>
+            </ul>
+
+            <img src="Images/BeatingTheGame5.webp" alt="End Ship" style="width: 500px; height: auto;">
+        </div> <!-- /.content_f -->
+    </div> <!-- /.container -->
+
+    <script src="JavaScript/Caves.js"></script>
 </body>
 </html>
+
