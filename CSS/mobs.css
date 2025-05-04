@@ -17,13 +17,3 @@ h3
     margin: 5px;
 }
 
-.container {
-    background-color: white;
-    grid-template-areas:
-        "a a a a a a a a a a"
-        "b e e e e e e e e c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "d d d d d d d d d d";
-}
