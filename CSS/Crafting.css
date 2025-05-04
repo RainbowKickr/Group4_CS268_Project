@@ -2,13 +2,39 @@ body{
     margin:0;
 }
 
-/* Sections */
+/* Sections & tables */
+.section {
+    display: flex;
+    justify-content: center;
+}
 table{
+    background-color: #f8f9fa;
+    width: 80%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+}
+th{
+    background-color: #eaecf0;
+    border: 1px solid black;
+}
+.name{
+    width:200px;
     background-color: #eaecf0;
 }
-
-.category {
-    background-color: #c6c6c6;
+.recipe{
+    width:300px;
+}
+.ingredients{
+    width:250px;
+}
+.output{
+    width: 150px;
+}
+.shape{
+    width:150px;
 }
 
 /*Skeleton*/
@@ -30,11 +56,11 @@ table{
     grid-template-areas:
         "a a a a a a a a a a"
         "b e e e e e e e e c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b g g g g g g g g c"
-        "b h h h h h h h h c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
         "b i i i i i i i i c"
         "d d d d d d d d d d";
 }
@@ -44,9 +70,6 @@ table{
 .content_c { grid-area: c; }
 .content_d { grid-area: d; }
 .content_e { grid-area: e; }
-.content_f { grid-area: f; }
-.content_g { grid-area: g; }
-.content_h { grid-area: h; }
 .content_i { grid-area: i; }
 
 .menu {
@@ -140,20 +163,13 @@ ul.menu li a:hover {
     min-height: 50px;
 }
 
-.content_e, .content_g, .content_h, .content_i {
+.content_e, .content_i {
     background-color: rgb(170, 143, 92);
     text-align: center;
     font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
-    height: 50vh;
-}
-
-.content_f  {
-    background-color: rgb(170, 143, 92);
-    text-align: center;
-    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    height: 50vh;
+    min-height: 50vh;
+    height:auto;
 }
 /* Skeleton End*/
 
@@ -170,7 +186,6 @@ ul.menu li a:hover {
     border-left: 4px solid #dbdbdb;
     border-top: 4px solid #dbdbdb;
     width: max-content;
-    box-shadow: 0 0 15px #000;
 }
   
 .crafting-grid {
@@ -191,17 +206,13 @@ ul.menu li a:hover {
     align-items: center;
 }
   
-.output-slot {
-    background-color: #8b8b8b;
-}
-  
 .arrow {
     font-size: 28px;
     color: #8b8b8b;
     user-select: none;
 }
 
-.slot img {
+.slot img, .output-slot img {
     width: 90%;
     height: 90%;
 }
