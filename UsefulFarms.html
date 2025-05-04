@@ -1,165 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Demo</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .scroll-background {
-            width: 100%;
-            height: 350px;
-            background-image: url("/Images/MC_sky.png");
-            background-size: cover;      
-            background-position: center;  
-            background-repeat: no-repeat; 
-            transition: height 0.5s;
-        }
-
-        .container {
-            display: grid;
-            background-color: #E6ECF0;
-            width: 100vw;
-            height: auto;
-            grid-template-areas:
-                "a a a a a a a a a a"
-                "b e e e e e e e e c"
-                "b f f f f f f f f c"
-                "b f f f f f f f f c"
-                "b f f f f f f f f c"
-                "b g g g g g g g g c"
-                "b h h h h h h h h c"
-                "b i i i i i i i i c"
-                "d d d d d d d d d d";
-        }
-
-        .content_a { grid-area: a; }
-        .content_b { grid-area: b; }
-        .content_c { grid-area: c; }
-        .content_d { grid-area: d; }
-        .content_e { grid-area: e; }
-        .content_f { grid-area: f; }
-        .content_g { grid-area: g; }
-        .content_h { grid-area: h; }
-        .content_i { grid-area: i; }
-
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        .menu li {
-            position: relative;
-        }
-
-        .menu a {
-            background-image: url("/Images/stone.jpg");
-            background-size: cover;      
-            background-position: center;  
-            background-repeat: no-repeat; 
-            padding: 17px;
-            font-size: 20px;
-            display: block;
-            background-color: #a8a6a6;
-            color: rgb(242, 195, 38);
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-            font-family: 'Pixelify Sans', sans-serif;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f9f9f9;
-            z-index: 1;
-            min-width: 180px;
-        }
-
-        ul.menu li a:hover {
-            background-image: 
-                linear-gradient(rgba(196, 151, 0, 0.6), rgba(173, 148, 5, 0.2)), 
-                url("/Images/gold.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: rgb(255, 255, 255);
-            transition: background-image 0.5s;
-        }
-
-        .dropdown-content a {
-            padding: 10px;
-            display: block;
-            background-color: #808080;
-        }
-
-        .menu li:hover .dropdown-content {
-            display: block;
-            transition: background-color 0.5s;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-            transition: background-color 0.5s;
-        }
-
-        .content_a {
-            background-image: url("/Images/grass.jpg");
-            background-size: cover;      
-            background-position: top;  
-            background-repeat: no-repeat; 
-            text-decoration: none;
-            position: relative;
-            background-color: rgb(105, 68, 19);
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            min-height: 100px;
-        }
-        .content_b, .content_c, .content_d {
-            background-image: url("/Images/dirt.png");
-            background-size: cover;      
-            background-position: center;  
-            background-repeat: no-repeat; 
-            background-color: rgb(105, 68, 19);
-            text-align: center;
-            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: rgb(0, 0, 0);
-            min-height: 50px;
-        }
-
-        .content_e, .content_g, .content_h, .content_i {
-            background-color: rgb(170, 143, 92);
-            text-align: center;
-            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: rgb(0, 0, 0);
-            height: 50vh;
-        }
-
-        .content_f  {
-            background-color: rgb(170, 143, 92);
-            text-align: center;
-            font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: rgb(0, 0, 0);
-            height: 50vh;
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/UsefulFarms.css">
 </head>
 <body>
     <div class="scroll-background" id="scrollBackground"></div>
-
     <div class="container">
         <div class="content_a">
-            <img src="/Images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
+            <img src="Images/logo.png" alt="logo" style="max-width: 1000px; width: 100%; height: auto;">
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li>
@@ -182,45 +33,91 @@
                 <li><a href="Mobs.html">Mobs</a></li>
                 <li><a href="#login">Login</a></li>
             </ul>
-        </div>
+        </div> <!-- /.content_a -->
+
         <div class="content_b"></div>
         <div class="content_c"></div>
         <div class="content_d"></div>
-        
-        <div class="content_e">
-            <h1 style="font-family: 'Pixelify Sans', sans-serif; color: #4b4b4b;">Step 1: Automatic Wheat Farm</h1>
-            <p style="max-width: 700px; margin: 0 auto;">The automatic wheat farm is an essential redstone contraption that allows players to easily harvest wheat without manual effort. To build one, you'll need dispensers, water buckets, and redstone components like observers and pistons. The design involves placing dispensers with water buckets that will flood and harvest the crops when activated. A redstone clock or observer can trigger the dispensers at regular intervals, ensuring the wheat is automatically watered and ready to be harvested. This farm can also be adapted for other crops like carrots or potatoes.</p>
-        </div>
-        
+
         <div class="content_f">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 2: Automatic Tree Farm</h2>
-            <p style="max-width: 700px; margin: 0 auto;">An automatic tree farm utilizes bone meal and pistons to generate and harvest trees. The tree grows with the help of bone meal and then pistons push the tree into a collection area. A hopper system underneath will gather the wood and saplings, which are then stored in chests. For this farm, you'll need to plant saplings and ensure the bone meal dispenser is constantly supplied with bones. With a redstone clock, the pistons are triggered, allowing for continuous wood production. The farm can be customized for different tree types like oak, spruce, or jungle trees.</p>
-        </div>
-        
-        <div class="content_g">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 3: Automatic Mob Farm</h2>
-            <p style="max-width: 700px; margin: 0 auto;">An automatic mob farm is useful for gathering resources like string, bones, and gunpowder. This redstone farm uses a combination of dark spawning platforms, water currents, and a drop chute to kill mobs. Mobs spawn in dark areas and are funneled into a drop chute where they fall to their death. Once they die, a hopper system collects the drops. You can use pistons to push mobs off platforms or use lava to deal the final blow. It’s important to ensure the spawning platforms are optimally spaced and dark enough to maximize mob spawning.</p>
-        </div>
-        
-        <div class="content_h">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 4: Automatic Sugar Cane Farm</h2>
-            <p style="max-width: 700px; margin: 0 auto;">Sugar cane farms are incredibly useful for obtaining paper and crafting books. To create an automatic sugar cane farm, place sugar cane near water and use pistons to harvest them. When the sugar cane reaches a certain height, observers will detect the growth and trigger pistons to break the crop. The broken sugar cane will then be pushed into a hopper system that leads to chests for storage. This farm can be expanded vertically for more efficiency, allowing you to harvest a large quantity of sugar cane in a short amount of time.</p>
-        </div>
-        
-        <div class="content_i">
-            <h2 style="font-family: 'Pixelify Sans', sans-serif;">Step 5: Automatic Villager Trading Hall</h2>
-            <p style="max-width: 700px; margin: 0 auto;">For a more advanced farm, the automatic villager trading hall is essential for acquiring rare items from villagers. This farm uses a redstone-powered system to move villagers between trading stations, where they can be locked into trades with items like enchanted books, emeralds, and more. The system is set up with minecarts, dispensers, and powered rails to move the villagers to the correct station. You can easily control the trades and automate the collection of goods. By combining a villager breeder and trading hall, you can generate a steady stream of resources from the villagers.</p>
-        </div>
-    </div>
+            <h1>Automatic Farms in Minecraft Java Edition</h1>
+            <p>Efficient resource farms can greatly accelerate your survival progress. Below is a stage‑by‑stage guide (Early, Mid, Late) to the most useful automatic farms for key resources (iron, XP, emeralds, crops, mob drops, bone meal, gunpowder, etc.). Each entry includes utility, estimated ROI, design notes, materials/space, and advanced tips. Citations from the Minecraft Wiki are provided for key facts.</p>
 
-    <script>
-        const background = document.getElementById("scrollBackground");
+            <h2>Early‑Game Farms (Simple Builds)</h2>
 
-        window.addEventListener("scroll", () => {
-            let scrollY = window.scrollY;
-            let newHeight = Math.max(0, 200 - scrollY);
-            background.style.height = `${newHeight}px`;
-        });
-    </script>
+            <h3>Basic Crop Farms (Wheat/Carrot/Potato)</h3>
+            <p>Create farmland adjacent to water and plant seeds, carrots, or potatoes for endless food. Even a simple 9×9 farm yields thousands of items per hour with minimal maintenance. Use a Farmer villager to automate replanting: assign a villager to a composter or farmland workstation, and it will harvest and replant on its own. Utility: food, bread, and trading currency. ROI: extremely fast; materials are dirt and seeds. (Advanced: water‑flush designs or pistons can harvest automatically.)</p>
+
+            <h3>Animal Farms (Chicken Cooker)</h3>
+            <p>Build a 3×3×4 pen with hoppers beneath (see egg‑farming tutorial). Confine ~20–24 chickens (max after 1.11 cramming). They lay an average of ~8 eggs/hour each. Use a dispenser clock to shoot eggs, hatching new chicks; a magma block or lava blade kills adults, collecting cooked chicken and feathers. Utility: infinite meat, feathers, and XP. ROI: self‑replenishing meat—iron for hoppers yields limitless food.</p>
+
+            <h3>Mob Spawner XP/Bone Farm (Dungeon Grinder)</h3>
+            <p>If you find a dungeon, convert its skeleton or zombie spawner into a trap (dark room with water currents leading to a drop). Skeletons drop 0–2 bones (and arrows); zombies drop rotten flesh (and occasional iron/carrot/potato). Even a basic build (no redstone, just water and a fall trap) yields steady XP and items. Utility: bones → bone meal, arrows for ammo, XP for enchanting. ROI: pays off quickly by supplying bone meal to boost crops and ammo.</p>
+
+            <h3>Cactus Farm</h3>
+            <p>Line up sand blocks with cactus, leaving one block between each. When cactus grows, an adjacent block breaks the new cactus. Funnel drops with water or hoppers into a chest. Utility: green dye (smelt cactus), green concrete, and furniture. ROI: trivial to build and provides a renewable dye source.</p>
+
+            <h3>Sugarcane Farm</h3>
+            <p>Plant sugar cane on sand blocks next to water. It grows up to three blocks high (~18 minutes per block). Harvest the second block, leaving the base to regrow. Utility: sugar (paper/cakes) and emeralds via cartographer/librarian trades. ROI: fast—requires only reeds, water, and sand. (Mid‑game: add observers/pistons for full automation.)</p>
+
+            <h3>Wheat/Carrot/Potato Crop Trading</h3>
+            <p>Plant pumpkins/melons or carrots/potatoes and trade with Farmer villagers. Farmers buy crops (and pumpkins/melons) for emeralds and sell bread and dye. Breeder farms supply villagers automatically. Utility: emeralds and supplies. ROI: self‑paying—villagers turn produce into currency.</p>
+
+            <h3>Fishing Farm (AFK XP & Loot)</h3>
+            <p>Set up an AFK fishing platform. With an enchanted rod (Luck of the Sea, Mending), catch treasure and gain ~28 XP per catch (~8 catches/minute). Utility: enchanted books, rods, bows, and XP. ROI: high—few materials yield endless gear and experience.</p>
+
+            <h2>Mid‑Game Farms (Moderate Builds)</h2>
+
+            <h3>Iron Golem Farm</h3>
+            <p>Build a “village” with 10–20 villagers and beds to force iron golem spawns. Use platforms 4 blocks below and 1 block above villager level to maximize the 512‑block spawn area. Golems spawn and are pushed into lava or water channels. Utility: massive iron and poppies. ROI: ~300–400 iron ingots/hour. Tip: stack multiple villages vertically.</p>
+
+            <h3>Creeper‑Only Gunpowder Farm</h3>
+            <p>Create a dark spawning pad with 2‑block‑high ceilings so only creepers spawn. Use cats to scare them into water streams leading to a kill chute. The “Chapman” design yields ~700 gunpowder/hour. Utility: TNT, rockets, trades. ROI: excellent—supplies all gunpowder needs.</p>
+
+            <h3>Skeleton Spawner Grinder</h3>
+            <p>Convert a skeleton spawner into an XP farm by funneling skeletons into a killing area. They drop bones and arrows. Utility: bonemeal, ammunition, XP. ROI: thousands of bones/hour. Tip: use a trapdoor to lower skeletons into one‑hit range.</p>
+
+            <h3>Witch Farm</h3>
+            <p>Flood a Witch Hut so witches fall into a trap. They drop bottles, glowstone, redstone, sugar, gunpowder, spider eyes, and XP. Utility: abundant potion ingredients. ROI: high—stacks of rare items per hour.</p>
+
+            <h3>Gold/Piglin Farm</h3>
+            <p>In the Nether, spawn zombified piglins on a magma‑block platform and kill them in lava or fall traps. Barter gold ingots automatically for pearls and other items. Utility: gold, XP, and bartered goods. ROI: hundreds of gold ingots/hour.</p>
+
+            <h3>Guardian Farm</h3>
+            <p>Drain an Ocean Monument and build spawning decks above. Use magma blocks or fall traps to kill guardians. Utility: prismarine shards/crystals, fish, XP. ROI: massive—one of the fastest XP farms.</p>
+
+            <h3>Auto Sugarcane Farm</h3>
+            <p>Use observers and pistons to harvest sugar cane the instant it grows. Utility: industrial‑scale paper and sugar. ROI: tens of thousands of reeds/hour.</p>
+
+            <h2>Late‑Game Farms (High‑Output Builds)</h2>
+
+            <h3>Enderman Farm</h3>
+            <p>In The End, build flat platforms at Y=1 with trapdoors and carpets to funnel endermen into kill zones. Utility: huge XP and pearls. ROI: ~30 levels/minute.</p>
+
+            <h3>Expanded Guardian Farm</h3>
+            <p>Automate one‑hit kills with trident killers or flying machines for enormous prismarine and XP yield. Add auto‑sorters for drop management.</p>
+
+            <h3>Gold/Piglin (Max Efficiency)</h3>
+            <p>Multi‑platform Nether gold farms with turtle‑egg aggro and automatic bartering cells yield thousands of gold and bartered items per hour.</p>
+
+            <h3>Tier‑2 Witch Farm</h3>
+            <p>Stack multiple huts or kill floors with item sorting systems for endless potion ingredients and XP. Use flying machines for collection.</p>
+
+            <h3>Villager Mega‑Farms</h3>
+            <p>Automate breeding, profession assignment, and trading at scale for unlimited emeralds and enchanted gear. Zombify/cure villagers to reduce costs.</p>
+
+            <h3>Bee/Honey Farm</h3>
+            <p>Use observers and dispensers to shear hives at honey level 5 automatically. Utility: honeycomb and honey bottles. ROI: steady crafting materials and food.</p>
+
+            <h3>Wither Skeleton Farm</h3>
+            <p>Build spawning platforms in a Nether fortress using trapdoors to mimic blocks. Funnel skeletons into traps for rare skull drops. Utility: beacon stars.</p>
+
+            <h3>Kelp Farm</h3>
+            <p>Auto‑harvest kelp towers with pistons and water streams, then smelt for dried kelp or blocks. Utility: fuel and XP storage.</p>
+        </div> <!-- /.content_f -->
+
+    </div> <!-- /.container -->
+
+    <script src="JavaScript/Caves.js"></script>
 </body>
 </html>
