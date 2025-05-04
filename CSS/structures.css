@@ -3,9 +3,10 @@ p
    margin: 10px 3vw 0px 3vw;
 }
 
-p img
+img
 {
     margin: 0px 15px 0px 15px;
+    height:200px
 }
 
 .container {

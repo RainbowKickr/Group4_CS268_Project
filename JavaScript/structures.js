@@ -1,10 +1,30 @@
 function overworldFunction() {
     document.getElementById("info").innerHTML = 
-        /* Heading */"<h1>Overworld</h1>" +
-        /* Ancient city */"<h3>Ancient City</h3>" +
-        /* Desert Temple */"<br>desert temple" +
-        /* Ocean Monument */"<br>ocean monument" +
-        /* Piller outpost */"<br>pillager outpost" +
+        /* Heading */"<h1>Overworld</h1>There are many structures in the overworld. This page will cover mostly beginner-friendly and later-game Overworld structures" +
+        /* Ancient city */"<h3>Ancient City</h3><img src ='/Images/ancientCity.jpg' alt='ancient city' style='float:right;'>" +
+        "Ancient Cities spawn around Y-level -52 in the deep dark biome. No mobs spawn withing the perimeter of an ancient city, even though "+ 
+        "the structure has very minimal lighting. Dotted around ancient cities and nearby cave systems are patches of sculk, sculk sensors and sculk shriekers. " +
+        "<p>Ancient cities can be for any point in the game provided a player has sufficient ways to keep their actions quiet. " +
+        "If the shriekers are activated 3 or more times, they spawn a warden. The only way to not activate the sensors or shriekers is to crouch near them or walk on wool blocks or carpets." +
+        "It is recommend but not necessary to bring either totems of undying or instant health potions.</p>" +
+        "<p>Notable loot includes the ward and silence trims, enchanted golden apples, coal, bones, regeneration potions, all enchantment books barring wind burst and soul speed, " +
+        "diamond pants, diamond horse armor, name tags, saddles, otherside music disks, echo shards, sculk, sculk sensors and sculk catalysts.</p>"+
+        /* Desert Temple */"<h3>Desert Temple</h3><img src ='/Images/desertTemple.jpg' alidden rooms in the ground floor of the structure. " +
+        "The first one is hidden under the terracotta pattern on the floor. It is bett='desert temple' style='float:left;'>" +
+        "Desert temples are a very easy and good structure for early game. There are 2 hter to dig down a side than fall down, as there is a pressure plate that if activated, " +
+        "will trigger 9 pieces of TNT and blow up all the chests. The second secret room is flooded with sand and contains no chests to loot, the archaeological loot is in the suspicous sand. " +
+        "The sand in the floor of the ground floor is the ceiling of the sand-filled secret room."+
+        "<p>The most notable chest loot are gunpowder, bones, string, saddles, gold, iron, diamonds, emeralds, golden apples, enchanted golden apples, diamond horse armor, gold horse armor, " +
+        "iron horse armor, dune trim and all enchanting books excluding swift sneak, soul speed and wind burst.</p>" +
+        "<p>Notable archaeological loot in the desert temple are gunpowder, diamonds, emeralds, TNT, and archer, miner, prize and skull pottery sherds.</p>" +
+        /* Shipwreck */"<h3>Shipwreck</h3><img src ='/Images/shipwreck.webp' alt='shipwreck' style='float:right;'>" +
+        "The shipwreak is another very easy structure for early game. It can either spawn underwater or more rarely, beached on a iceburg or beach. It can also appear as part of a ship or a full ship. " +
+        "Shipwrecks generate in all ocean biomes, drowned might alo spawn be around the ship." +
+        "<p>There are 3 chests on a shipwreck if it is fully intact.</p><p>The first is in the captain's quarters and its notable loot is iron, gold, lapis lazuli, diamonds, bottles o' enchanting and coast trim.</p>" +
+        "The other 2 chests will be below deck, one closer to the stern of the ship and the other closer to the bow of the ship. " +
+        "<p>Notable loot from the chest under the deck by the stern is a buried treasure map, books, paper, feathers, empty maps and coast trim.</p>" +
+        "<p>Finally, the notable loot from the chest by the ship's bow unde the bow is paper, wheat, carrots, potatoes, bamboo, gunpowder, TNT, coal, moss blocks, lether armor pieces that could be enchanted and coast trim.</p>" +
+        "<br><br><br><br><br><br><br><br>"+/* Piller outpost */"<br>pillager outpost" +
         /* Stronghold */"stronghold" +
         /* Trial Chambers */"<br>trial chambers" +
         /* Trail Ruins */"<br>trail ruins" +
