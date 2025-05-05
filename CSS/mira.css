@@ -82,3 +82,8 @@ h3
         "b f f f f f f f f c"
         "d d d d d d d d d d";
 }
+.content_e,
+.content_f
+{
+    background-color: rgb(170, 143, 92);
+}

@@ -1,10 +1,31 @@
 function overworldFunction() {
     document.getElementById("info").innerHTML= 
     /* Intro */"There are 54 different biomes in the Overworld compared to the Nether's and End's 5 biomes each, so biomes are grouped generally by biome type. Any specific information for a biome includes their name." +
-    /* Plains Biomes */"<h3>Plains Biomes</h3>" +
-    /* Forest Biomes */"<h3>Forest Biomes</h3>" +
-    /* Mountainous Biomes */"<h3>Mountainous biomes</h3>" +
-    /* Desert & Savanna Biomes */"<h3>Desert & Savanna Biomes</h3><img src=/Images/desertBadlandsAndSavanna.avif alt='desert, savanna & bandlands' style='float:right'>" +
+    /* Forest Biomes */"<h3>Forest Biomes</h3><img src=/Images/paleGarden.png alt='pale garden, dark oak forest and jungle' style='float:right'>" +
+    "<p>The trees with the gray leaves in the picture to the right is a pale garden. Pale oak trees are only found in this biome, along with pale moss, hanging moss and eyeblossoms. "+
+    "At night creakings spawn and attack any player not looking at them.</p>"+
+    "Immediately surrounding the pale garden is a dark oak forest. These trees are also only found in this biome. " +
+    "The leaves of the trees cover a lot of the sky when a player is on the ground, making it so mobs can spawn in a few very dark places."+
+    "<p>The tall trees in the back of the picture are from one of the 3 jungle biomes, jungle, sparse jungle and bamboo jungle. " +
+    "In all of these biomes jungle trees generate as the main tree, with normal oak trees also occasionally generating in jungles</p>" +
+    "<p>Not pictured are a few biomes, including birch forest, old growth birch forest, forest, flower forest, taiga, old growth pine taiga, old growth spruce taiga, snowy taiga and old growth snowy taiga."+
+    "The difference between the regular forests and the old growth forests is that in the old growth forests the trees will be taller and will have thicker trunks if it is a taiga biome. " +
+    "The two birch forest varients are populated with only birch trees and some flower patches. The forest and flower forest will generate with more trees being oak trees than birch trees. " +
+    "While flowers can generate here, there will be more flowers and more varities of flowers in the flower grove. " +
+    "Finally, in all of the taiga biomes, spruce trees will be the only tree to generate. " +
+    "Only grass will generate on the ground in normal taigas, whereas in old growth taigas it will be a mix between grass, podzl and sometimes corse dirt.</p>" +
+    /* Mountainous Biomes */"<h3>Mountainous biomes</h3><img src=/Images/cherryGrove.png alt='cherry grove' style='float:left'>" +
+    "<p>Pictured to the left is a cherry grove. This is the only place cherry trees and pink petals spawn. You can also find patches of poppies and dandelions." +
+    "There are a few other mountainous biomes that don't have snow, including meadows, windswept hills, windswept gravelly hills, windswept forest and stony peaks." +
+    "Meadows are located on top of mountains, have barely any trees and a variety of flowers. Windswept hills are similar, but with less flowers. " +
+    "Windswept forests have more trees and are part of the side of and right next to mountains. They can sometimes have floating islands. " +
+    "Windswept gravelly hills look like a mixture of windswept hills and stony peaks. It has grass, stone and gravel patches for ground with few trees. " +
+    "Stony peaks are entirely stone and can have a few stripes of calcite and exposed ores spawn on top of them. No passive mobs spawn on stony peaks and no snow accumulates in this biome.</p>"+
+    "<p>There are also snow-covered mountainous biomes, which consist of grove, snowy slopes, jagged peaks and frozen peaks. All of them are covered with snow blocks. " +
+    "Grove is the only snowy mountain biome to have trees, spruce trees specifically, all other snowy mountain biomes don't have any trees. "+
+    "Snowy slopes have mountains with softer summits than the jagged peaks biome. Snowy slopes and grove are the only 2 biomes to generate powdered snow." +
+    "Jagged peaks and frozen peaks both have sharper and harder-to-traverse mountains, though the main difference between the two biomes is that frozen peaks also naturally generates with large patches of ice while jagged peaks does not.</p>"+
+    /* Desert & Savanna Biomes */"<h3>Desert & Savanna Biomes</h3><img src=/Images/desertBadlandsAndSavanna.avif alt='mangrove swamp' style='float:right'>" +
     "<p>The desert biome is made up of entirely regular, yellow sand on the surface, with a few layers of sandstone below it before the regular stone. Scattered around on top of the sand are dead bushes, cacti and dry grass. " +
     "Villages that spawn in deserts will spawn with camels as well. The only trees that can be found in this biome are azalea trees if there is a lush cave beneth the sand.</p>" +
     "<p>The badlands and eroded badlands contain orange stand and orange standstone in place of yellow sand and sandstone. " +
@@ -24,10 +45,8 @@ function overworldFunction() {
     "The major different between deep oceans and regular oceans is that ocean monuemnts can spawn in deep oceans because of the extra depth, whereas they don't spawn in an ocean with a regular depth. "+ 
     "Every temperature varient except warm oceans have a deep ocean counterpart.</p>" +
     "<p>Ice only spawns both frozen oceans varients. Likewise coral spawns only in warm oceans. Kelp only spawns in the varients from frozen oceans to lukewarm oceans whereas sea grass spawns in all ocean biomes.</p>" +
-    "<p>Drowned and squid can spawn in all ocean biomes, dolphins can only spawn in variants of warm through temperate ocean biomes. Tropical fish spawn in warm through lukewarm ocean varients.</p>"+
-    ""
-    ;
-    document.getElementById("f").style.height = "auto";
+    "<p>Drowned and squid can spawn in all ocean biomes, dolphins can only spawn in variants of warm through temperate ocean biomes. Tropical fish spawn in warm through lukewarm ocean varients.</p>";
+    document.getElementById("f").style.height="auto";
 }
 
 function netherFunction() {
