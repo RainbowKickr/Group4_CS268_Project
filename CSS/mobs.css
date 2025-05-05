@@ -1,12 +1,19 @@
 table {
-    border-color: rebeccapurple;
     border-width: 3px;
     border-spacing: 0px;
     text-align: center;
     width: 94vw;
     margin: 5px;
     background-color: white;
+    align-self:center;
+    border: 3px solid rebeccapurple;
 
+}
+
+tr,
+td
+{
+    border: 1px solid rebeccapurple;
 }
 
 table img {

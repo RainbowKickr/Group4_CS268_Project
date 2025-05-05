@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Mobs</title>
@@ -44,14 +45,16 @@
         <div class="content_e">
             <p>
                 Mobs spawn everywhere and in every dimension. There are three type of mobs: passive, neutral and
-                hostile.
-                <br><br><b>Passive mobs</b> will not attack you back under any circemstance
-                <br><b>Neutral mobs</b> will spawn as passive, but under certain conditions they will attack you
-                <br><b>Hostile mobs</b> will always try to attack when you are in range for them to see you
-                <p><a href="https://minecraft.wiki/w/Mob#List_of_mobs" target="_blank">Click here</a> for more information on all the various mobs in Minecraft!</p>
+                hostile. 
             </p>
-            <p>
-            <table border align="center">
+            <br><br><b>Passive mobs</b> will not attack you back under any circemstance
+            <br><b>Neutral mobs</b> will spawn as passive, but under certain conditions they will attack you
+            <br><b>Hostile mobs</b> will always try to attack when you are in range for them to see you
+            <p><a href="https://minecraft.wiki/w/Mob#List_of_mobs" target="_blank">Click here</a> for more information
+                on all the various mobs in Minecraft!</p>
+
+            
+            <table>
                 <tr>
                     <td>Overworld Mob Picture</td>
                     <td>Health</td>
@@ -79,13 +82,13 @@
                     </td>
                 </tr>
             </table>
-            </p>
+            
             <button class="button1" type="button" onclick="overworldFunction()">Overworld</button>
             <button class="button2" type="button" onclick="netherFunction()">Nether</button>
             <button class="button3" type="button" onclick="endFunction()">End</button>
         </div>
         <div class="content_f" id="f">
-            <table id="table" border></table>
+            <table id="table"></table>
         </div>
     </div>
     <script src="JavaScript/mobs.js"></script>
