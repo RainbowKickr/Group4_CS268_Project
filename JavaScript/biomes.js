@@ -1,28 +1,63 @@
 function overworldFunction() {
-    document.getElementById("info").innerHTML= "<br>Plains biomes" +
-    "<br>forest biomes" +
-    "<br>savanna biomes" +
-    "<br>highlands biomes" +
-    "<br>desert biomes" +
-    "<br>swamp & beach biomes" +
-    "<br>Cave biomes" +
-    "<br>ocean biomes";
+    document.getElementById("info").innerHTML= 
+    /* Intro */"There are 54 different biomes in the Overworld compared to the Nether's and End's 5 biomes each, so biomes are grouped generally by biome type. Any specific information for a biome includes their name." +
+    /* Plains Biomes */"<h3>Plains Biomes</h3>" +
+    /* Forest Biomes */"<h3>Forest Biomes</h3>" +
+    /* Mountainous Biomes */"<h3>Mountainous biomes</h3>" +
+    /* Desert & Savanna Biomes */"<h3>Desert & Savanna Biomes</h3><img src=/Images/desertBadlandsAndSavanna.avif alt='desert, savanna & bandlands' style='float:right'>" +
+    "<p>The desert biome is made up of entirely regular, yellow sand on the surface, with a few layers of sandstone below it before the regular stone. Scattered around on top of the sand are dead bushes, cacti and dry grass. " +
+    "Villages that spawn in deserts will spawn with camels as well. The only trees that can be found in this biome are azalea trees if there is a lush cave beneth the sand.</p>" +
+    "<p>The badlands and eroded badlands contain orange stand and orange standstone in place of yellow sand and sandstone. " +
+    "These biomes contain the same sparse foliage as a regular desert, though the higher boints and mountains in these badland biomes replace the sand and sandstone with different colors of terracota. " +
+    "And in both of these biomes, gold is sigifcantly more abundent and can spawn much higher up than in other biomes.</p>"+
+    "<p>In the savanna, windswept savanna and savanna plateau, the ground is grass or dirt with acacia (a-kay-sh-a) tree scattered about sparsely. " +
+    "A few flower pactches can be found, but no foliage from the desert or badland biomes will be found in savannas</p>"+
+    /* Swamp & Beach Biomes */"<h3>Swamp & Beach Biomes</h3><img src=/Images/mangroveSwamp.avif alt='mangrove swamp' style='float:left'>" +
+    "<p>Pictured to the left is a mangrove swamp. This and a normal swamp are partially water, partially land. One  difference between the two is that mangrove swamps are the only place mud naturally generates. "+
+    "A variation of normal oak trees generate across normal swamp biomes while large mangrove trees generate in mangrove forests. Witch huts can generate in both biomes, and frogs can also spawn in both biomes.</p>"+
+    "<p>There are 3 diffrerent beach-like biomes. First is the regular beach biome that generates with sand, rarely a player may find a beached shipwreck here. The second kind of beach is the stony shore biome." +
+    "These shores are made up of stone with occasional patches of gravel and dirt, with small clumps of coal and sometimes iron. These can generate right next to mountains so their slopes can vary drasticly compared to both other types of beaches." +
+    "The final beach biome is the snowy beach. It is almost identical to the regular beach, but on top of the sand there's a layer or two of snow</p>One final note is that no passive mobs spawn on any of these beaches."+
+    /* Ocean Biomes */"<img src=/Images/oceanIsOcean.jpg alt='mr. incredibles 'ocean is ocean' meme' style='float:right;width:200px;height:auto;margin: 0px 15px 50px 15px'><h3>Ocean Biomes</h3>"+
+    "<p>There are 9 different ocean biomes: warm ocean, lukewarm ocean, deep lukewarm ocean, ocean, deep ocean, cold ocean, deep cold ocean, frozen ocean and deep cold frozen ocean. " +
+    "2 depths for almost all oceans, regular and deep, and 5 different temperatures for all oceans, warm, lukewarm, regular, cold and frozen. " +
+    "The major different between deep oceans and regular oceans is that ocean monuemnts can spawn in deep oceans because of the extra depth, whereas they don't spawn in an ocean with a regular depth. "+ 
+    "Every temperature varient except warm oceans have a deep ocean counterpart.</p>" +
+    "<p>Ice only spawns both frozen oceans varients. Likewise coral spawns only in warm oceans. Kelp only spawns in the varients from frozen oceans to lukewarm oceans whereas sea grass spawns in all ocean biomes.</p>" +
+    "<p>Drowned and squid can spawn in all ocean biomes, dolphins can only spawn in variants of warm through temperate ocean biomes. Tropical fish spawn in warm through lukewarm ocean varients.</p>"+
+    ""
+    ;
     document.getElementById("f").style.height = "auto";
 }
 
 function netherFunction() {
-    document.getElementById("info").innerHTML= "<p>There are 5 biomes in the Nether, each very unique from the others. Below each biome are lava lakes that go to bedrock.</p>" +
+    document.getElementById("info").innerHTML= 
+    /* Intro */"<p>There are 5 biomes in the Nether, each very unique from the others. Below each biome are lava lakes that go to bedrock.</p>" +
     /* Basalt Delta */"<h3>Basalt Delta</h3><img src='/Images/basaltdelta.webp' alt='basalt delta' style=float:left>" +
     "<p>The first one to mention is the 'Basalt Deltas'. Made up of mostly its namesake, basalt in varying heights of pillers. " +
     "There is also a good amount of blackstone, magma blocks and lava scattered throughtout the basalt deltas.</p>" +
     "<p>Quartz ore, neather gold ore and ancient debris all spawn underground in basalt deltas</p>" +
     "<p>Be wary while traversing through here, attempting to mine directly through the basalt could lead to lava pools. " +
-    "Traveling through these biomes is recommended to be done with an elytra or by placing blocks.</p>" +
+    "Traveling through these biomes is recommended to be done with an elytra or by placing blocks.</p><br>" +
     "<p>Magma cubes spawn more frequently in basalt deltas, striders and ghasts also spawn in basalt deltas. Pigmen, piglins and hoglins don't spawn in basalt deltas.</p>" +
-    "<h3>crimson forest</h3>" +
-    "<h3>warped forest</h3>" +
-    "<h3>nether wastes</h3>" +
-    "<h3>soul sand vally</h3>";
+    /* Crimson Forest */"<h3>Crimson Forest</h3><img src='/Images/crimsonForest.webp' alt='crimson forest' style=float:right>" +
+    "Crimson forests house grown crimson fungi, which are the tree-like plants with red warts for leaves and crimson stems for trunks. " +
+    "Hung on the interior of the red warts are shroomlights, and weeping vines hanging from the exterior." +
+    "Crimson fungi and occasionally warped fungi can be found on the crimson nylium-covered netherrack. Nither will grow unless bonemealed." +
+    "<p>Nether gold ore and quartz ore can be seen exposed on the sides of hills and cliffs, while ancient debris is underground.</p>"+
+    "<p>When traveling by foot through a crimson forest, it's recommeded you bring a warped fungis to scare off hoglins. " +
+    "A piece of gold armor is also recommended in case a player runs into any piglins.</p>"+
+    "<p>The mobs that can spawn here are striders, hoglins, piglins and zombified piglins while all other nether mobs don't spawn here.</p><br>" +
+    /* Warped Forest */"<h3>Warped Forest</h3><img src='/Images/warpedForest.webp' alt='warped forest' style=float:left>" +
+    "The warped forest is very similar to crimson forests, one key difference is that instead of crimson nylium, crimson stems, crimson warts and weeping vines " +
+    "there is warped nylium, warped stems, warped warts and twisting vines. Warped fungis is found much more frequently on the ground than crimson fungis, and it will not grow unless it's bonemealed." +
+    "<p>Quartz ore and neather gold ore also spawn on cliffs and visable netherrack on the sides of hills in warped forests.</p>" +
+    "Players could for the most part walk through here without any armor or weapons, although that isn't recommended incase they look into the eyes of an enderman. " +
+    "It is recommend to bring blocks for traversal of the biome and to aid in keeping hostile enderman away. " +
+    "A carved pumpkin is something a player could wear if they don't want to worry about enderaman." +
+    "<p>Another key difference is that absolutely no mobs except enderman spawn in warped forests. Hoglings will also actively avoid entering these forests.</p><br>" +
+    /* Nether Wastes */"<h3>Nether Wastes</h3><img src='/Images/netherWastes.webp' alt='nether wastes' style=float:right>" +
+    /* Soul Sand Valley */"<br><br><br><br><br><br><br><br><br><h3>Soul Sand Valley</h3><img src='/Images/soulSandValley.webp' alt='soul sand valley' style=float:left>";
     document.getElementById("f").style.height = "auto";
 }
 
@@ -39,4 +74,4 @@ function endFunction() {
     "The 'End Highlands' is the only place chorus fruit and end cities spawn.</p>";
     document.getElementById("f").style.height = "auto";
 }
-netherFunction();
+overworldFunction();
