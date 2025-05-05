@@ -25,16 +25,16 @@ th{
     background-color: #eaecf0;
 }
 .recipe{
-    width:300px;
+    width:250px;
 }
 .ingredients{
     width:250px;
 }
 .output{
-    width: 150px;
+    width: 250px;
 }
 .shape{
-    width:150px;
+    width:200px;
 }
 
 /*Skeleton*/
@@ -163,12 +163,20 @@ ul.menu li a:hover {
     min-height: 50px;
 }
 
-.content_e, .content_i {
+.content_e {
     background-color: rgb(170, 143, 92);
     text-align: center;
     font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
     min-height: 50vh;
+    height:auto;
+}
+.content_i{
+    background-color: rgb(170, 143, 92);
+    text-align: center;
+    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    min-height: 10vh;
     height:auto;
 }
 /* Skeleton End*/
