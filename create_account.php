@@ -28,6 +28,6 @@ if($stmt->execute()) {
 }else{
     echo "Error: " . $stmt->error. "<br><a href='create_account.html'>Try Again</a>";
 }
-W
+
 $stmt->close();
 ?>
