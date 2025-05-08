@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "minecraft_guide";
+$dbname = "minecraft_webpage";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
