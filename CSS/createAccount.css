@@ -20,12 +20,6 @@ body {
     grid-template-areas:
         "a a a a a a a a a a"
         "b e e e e e e e e c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b g g g g g g g g c"
-        "b h h h h h h h h c"
-        "b i i i i i i i i c"
         "d d d d d d d d d d";
 }
 
