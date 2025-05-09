@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
 .scroll-background {
     width: 100%;
     height: 350px;
@@ -20,11 +24,11 @@ body {
     grid-template-areas:
         "a a a a a a a a a a"
         "b e e e e e e e e c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b f f f f f f f f c"
-        "b g g g g g g g g c"
-        "b h h h h h h h h c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
+        "b e e e e e e e e c"
         "b i i i i i i i i c"
         "d d d d d d d d d d";
 }
@@ -34,9 +38,6 @@ body {
 .content_c { grid-area: c; }
 .content_d { grid-area: d; }
 .content_e { grid-area: e; }
-.content_f { grid-area: f; }
-.content_g { grid-area: g; }
-.content_h { grid-area: h; }
 .content_i { grid-area: i; }
 
 .menu {
@@ -52,7 +53,7 @@ body {
 }
 
 .menu a {
-    background-image: url("../Images/stone.jpg");
+    background-image: url("../images/stone.jpg");
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -78,7 +79,7 @@ body {
 ul.menu li a:hover {
     background-image: 
         linear-gradient(rgba(196, 151, 0, 0.6), rgba(173, 148, 5, 0.2)), 
-        url("../Images/gold.jpg");
+        url("../images/gold.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +104,7 @@ ul.menu li a:hover {
 }
 
 .content_a {
-    background-image: url("../Images/grass.jpg");
+    background-image: url("../images/grass.jpg");
     background-size: cover;      
     background-position: top;  
     background-repeat: no-repeat; 
@@ -119,7 +120,7 @@ ul.menu li a:hover {
     min-height: 100px;
 }
 .content_b, .content_c, .content_d {
-    background-image: url("../Images/dirt.png");
+    background-image: url("../images/dirt.png");
     background-size: cover;      
     background-position: center;  
     background-repeat: no-repeat; 
@@ -130,18 +131,41 @@ ul.menu li a:hover {
     min-height: 50px;
 }
 
-.content_e, .content_g, .content_h, .content_i {
-    background-color: rgb(170, 143, 92);
+.content_e, .content_i {
+    background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     color: rgb(0, 0, 0);
-    height: 50vh;
+    min-height: 50px;
 }
 
-.content_f  {
-    background-color: rgb(170, 143, 92);
-    text-align: center;
-    font-family: "Chirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    height: 50vh;
+.content_e img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.imager-textl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.imager-textl img {
+    max-width: 35%;
+    height: auto;
+    margin-left: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.imager-textl .text-content {
+    max-width: 50%;
+    text-align: left;
 }
